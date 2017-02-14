@@ -1,0 +1,866 @@
+/* style.css - a simple style sheet */
+body {
+    margin-left: 0%; margin-right: 0%;
+    color: black;
+    background: url(Images/Fade.png);
+    background-repeat: repeat-x;
+    font-family: Calibri, Arial, sans-serif;
+    
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+}
+
+/* =================== */
+/* === Top Toolbar === */
+
+header {
+    position: relative;
+}
+
+#squid {
+    margin-left: 6px;
+    position: absolute;
+    z-index: 10;
+}
+
+#squidLogo {
+    height: 150px;
+    width: auto;
+}
+
+#icon {
+    position: absolute;
+    top: -5px;
+    left: 130px;
+}
+
+#title {
+    margin-left: 6px; margin-right: 6px;
+    position: relative;
+    left: 130px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 11px 1px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+#whimsy {
+    position: relative;
+    top: -12px;
+    left: 180px;
+    z-index:-1;
+    margin-right: 180px;
+}
+
+#menuBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:deepskyblue;
+    font-family: Verdana, Calibri, Arial, sans-serif;
+    font-size: 1em;
+}
+
+#mainMenu, #miniMenu {
+    float: right;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+}
+
+.menuItem {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 3;
+}
+
+#mainMenu nav:hover .ink/*, #miniMenu:hover .ink*/ {
+    display: block;
+}
+
+.ink {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: -5px;
+}
+
+.ink_all {
+    top: 0px;
+}
+
+.ink_cartoons {
+    top: -3px;
+    transform: translateX(3px);
+}
+
+.ink_mini {
+    top: -1px;
+    transform: translateX(8px);
+}
+
+/* ======================= */
+/* === Dropdown Stuffs === */
+
+.hover_menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.show { display: block; }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* ======================= */
+/* === Mini Dropdown!  === */
+
+#miniMenu {
+    display: none;
+}
+
+#miniMenu label, #miniMenu img {
+    pointer-events: none;
+}
+
+#miniMenu .dropdown-content {
+    right: 0px;
+    font-family: Calibri, Arial, sans-serif;
+    padding-left: 5px;
+}
+
+#miniMenu .dropdown-content a {
+    font-weight: bold;
+    color: black;
+    padding: 5px 2px;
+    padding-left: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.miniSubMenu {
+    padding-left: 10px;
+}
+
+#miniMenu .dropdown-content .miniSubMenu a {
+    font-weight: normal;
+}
+
+#miniMenuSmallerLabel {
+    width: 20px;
+    height: auto;
+    display: none;
+}
+
+/* ================== */
+/* === Main Bitz! === */
+
+#mainBitz {
+    margin-left: auto; margin-right: auto;
+    margin-top: 30px;
+    width: 800px;
+    color: black; background: white;
+    //font-size: 15px;
+    //font-size: 0.95em;
+    //font-size: 1.1em;
+    font-family: Calibri, Arial, sans-serif;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+#mainBitz p a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#mainBitz p a:hover {
+    color: #ff0f64;
+}
+
+/* ======================= */
+/* ===== Article Nav ===== */
+
+.articleNav {
+    text-align: center;
+    pointer-events: none;
+}
+
+.articleNav a {
+    padding: 0px 10px;
+    color:deepskyblue;
+    font-weight: bold;
+    text-decoration: none;
+    pointer-events: auto;
+    
+    position: relative; /* Stupid IE11... */
+}
+
+.articleNav a:hover {
+    color: #ff0f64;
+}
+
+.articleNav .theEnd {
+    color:gray;
+    font-weight: normal;
+    pointer-events: none;
+}
+
+.articleNav .theEnd:hover {
+    color:gray;
+}
+
+/* =================== */
+/* ==== Home page ==== */
+
+.greeting {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.smallerGreeting {
+    font-size: 1.17em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+/* ====================== */
+/* === Latest Section === */
+
+#latestActivity {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    text-decoration: none;
+
+}
+
+#latestActivity h2 {
+    padding-top: 10px;
+}
+
+/* ================== */
+/* == Newest Stuff == */
+
+.newest {
+    padding: 10px;
+    
+    margin-top: 5px;
+    border-radius: 10px;
+    background: #ffefbd;
+    
+    text-decoration: none;
+    
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.newest:hover {
+    border-style: solid;
+    //border-color: deepskyblue;
+    border-color: #ff0f64;
+    border-width: 2px;
+    padding: 8px;
+}
+
+.newest img {
+    align-self: flex-start;
+    max-width: 120px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.newest summary {
+    padding-left: 10px; padding-right: 10px;
+    color: black;
+}
+
+/* =================== */
+/* == Recent Stuffs == */
+
+#recentActivity {
+    align-content: space-around;
+    justify-content:space-around;
+    
+    margin-top: 5px;
+    border-radius: 10px;
+    //background: #ffd7d6;
+    background: #eadcff;
+    
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.recent {
+    margin: 0% auto;
+    text-align: center;
+    padding: 10px;
+    max-width: 120px;
+    min-width: 80px;
+    text-decoration: none;
+}
+
+.recent:hover {
+    border-style: solid;
+    border-color: deepskyblue;
+    border-width: 2px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.recent img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.recent summary {
+    margin: 0px;
+    color: black;
+    pointer-events: none;
+}
+
+/* =================== */
+/* === Linky Link! === */
+
+.posts {
+    display: table;
+}
+
+.postLabel {
+    display:table-row;
+    
+}
+
+.postLabel label {
+    padding-right: 20px;
+    padding-bottom: 3px;
+    display:table-cell;
+    min-width: 50px;
+    white-space: nowrap;
+}
+
+.postLabel a {
+    display: table-cell;
+    text-decoration: none;
+    color:black;
+}
+
+.postLabel a:hover {
+    color:#ff0f64;
+    font-weight: bold;
+}
+
+.hiddenLabel {
+    display: none;
+}
+
+/* ==================== */
+/* === Latest Toons === */
+
+#latestToons {    
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-flow: wrap;
+    flex-wrap: wrap;
+}
+
+.container {
+    padding: 20px 0px;
+    -webkit-flex-basis: 33%;
+    flex-basis: 33%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.latestToon {
+    max-width: 150px;
+    margin: auto;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.latestToon summary {
+    pointer-events: none;
+}
+
+.latestToon:hover {
+    color:#ff0f64;
+    font-weight: bold;
+}
+
+/* ======================= */
+/* ======== Posts ======== */
+
+#mainBitz article h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 0px;
+}
+
+#mainBitz article h2 {
+    padding-left: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+#mainBitz article h3 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 0px;
+}
+
+#mainBitz article header p {
+    text-align: center;
+    color: #808080;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 0px;
+}
+
+#mainBitz article .keyBit {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+#mainBitz article .reference {
+    font-weight: normal;
+    color: #808080;
+    font-size: smaller;
+    
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+#mainBitz #postFootnotes {
+    margin-top: 30px;
+    font-size: 0.8em;
+}
+
+#mainBitz #postFootnotes fn {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.referenceBox {
+    display: block;
+    position: absolute;
+    width: 200px;
+    font-size: 0.8em;
+    
+    border-style: solid;
+    border-color: #ff0f64;
+    border-width: 2px;
+    padding: 8px;
+    background-color: #ffffff;
+    z-index: 10;
+    box-shadow: -5px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#mainBitz figure {
+    margin: 0px;
+    text-align: center;
+}
+
+#mainBitz figure.centre {
+    height: auto;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainBitz figure.wide {
+    max-width: 100%;
+}
+
+#mainBitz figure.left {
+    float: left;
+    max-width: 40%;
+    margin-right: 5px;
+}
+
+#mainBitz figure.right {
+    float: right;
+    max-width: 40%;
+}
+
+#mainBitz figure.small {
+    max-width: 35%;
+}
+
+#mainBitz figure.large {
+    max-width: 50%;
+}
+
+#mainBitz figure.icon {
+    max-width: 20%;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.imgCentre {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainBitz figure img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainBitz figure figcaption {
+    text-align: center;
+    color: #808080;
+    //font-weight: bold;
+    font-size: 1.1em;
+    margin: 5px 5px 0px 5px;
+    padding: 0px 25px 10px 25px;
+    display: inline-block;
+    
+    border-left: 1px solid #ff9494;
+    border-right: 1px solid #ff9494;
+    border-bottom: 1px solid white;
+    border-radius: 0px 0px 50px 50px;
+    color: #9a3636;
+    
+    border-left: 1px solid deepskyblue;
+    border-right: 1px solid deepskyblue;
+    color: #505050;
+}
+
+/* ======================= */
+/* ====== Cartoons  ====== */
+
+#comicHouse {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.mainComic {
+    height: auto;
+    max-width: 100%;
+}
+
+/* ============================ */
+
+
+/*#latestToons2 {
+    background: #ba3aa0;
+    //background: #a5e8ff;
+    
+    border-radius: 20px;
+    padding: 10px 0px;
+    font-size: 1.1em;
+    //font-weight: bold;
+    
+    display: flex;
+    flex-flow:wrap;
+}
+
+.latestToon2 {
+    display: flex;
+    align-self: flex-start;
+    //padding: 5px 10px;
+    text-decoration: none;
+    //color: black;
+    color: white;
+    margin: auto;
+    flex-basis: 45%;
+    
+}
+
+.latestToon2 label {
+    padding-top: 5px;
+    padding-left: 5px;
+    pointer-events: none;
+}*/
+
+
+.lilac {
+    background: #eadcff;
+}
+
+.vanilla {
+    background: #ffefbd;
+}
+
+.strawberry {
+    background: #ffd7d6;
+}
+
+/* ============= */
+/* === About === */
+
+#me {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.clearSpace {
+    clear: left;
+}
+
+/* ================== */
+/* === Old Recent === */
+
+/*.section {
+    display: flex;
+    vertical-align: top;
+}
+
+.latest_L {
+    direction: ltr;
+    text-align: left;
+    //align-self: flex-start;
+    
+    flex-grow: 1;
+    width: 50%;
+    margin-right: 2.5px;
+    word-break: break-all;
+}
+
+.latest_R {
+    direction: rtl;
+    text-align: right;
+    //align-self: flex-end;
+    
+    flex-grow: 1;
+    width: 50%;
+    margin-left: 2.5px;
+    word-break: break-all;
+}
+
+.latest img {
+    align-self: flex-start;
+}
+
+.latest summary {
+    padding-left: 10px; padding-right: 10px;
+}*/
+
+/* ===================== */
+/* === Footer Stuffs === */
+
+footer {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.trim {
+    background: url(Images/Footer.png);
+    background-repeat: repeat-x;
+    height: 110px;
+}
+
+#otherPages {
+    background: deepskyblue;
+    overflow:visible;
+    //font-family: Verdana, Calibri, Arial, sans-serif;
+    font-size: 1.1em;
+    vertical-align: top;
+    padding-bottom: 5px;
+}
+
+#otherPagesHeader {
+    //font-weight: bold;
+    font-size 1.2em;
+    padding: 5px;
+    color: white;
+}
+
+.pageLink {
+    overflow:hidden;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 120px;
+}
+
+.pageLink:hover {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+
+.pageLink img {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.pageLink label {
+    pointer-events: none;
+}
+
+#legalBejeezus {
+    font-size: 0.7em;
+    text-decoration: none;
+    color: grey;
+}
+
+#legalBejeezus a {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+
+/* ============================ */
+/* === Screen sizing logic! === */
+
+/*
+< 768px
+< 1024px
+> 1024px
+*/
+
+/*=== Show Mini-Menu! ===*/
+@media(max-width: 835px) {
+    #mainMenu { display: none; }
+    #miniMenu { display: inline-block; }
+    
+    #mainBitz { width: 500px;}
+    
+    .latestToon { flex-basis: 100%; }
+    
+    #mainBitz figure figcaption { font-size: 1em; }
+    #mainBitz figure.centre { max-width: 90%; }
+    #mainBitz figure.left, #mainBitz figure.right, #mainBitz figure.small { max-width: 50%; }
+}
+
+/*=== Show even Minier-Menu & Menubar Shrink ===*/
+@media(max-width: 550px) {
+    #mainBitz { margin-left: 7%; margin-right: 7%; margin-top: 10%; width: auto; }
+    
+    .menuItem { padding-top: 20px; padding-bottom: 3vw; }
+    
+    .latest { display: block; text-align: center; }
+    .latest summary { margin-left: 10%; margin-right: 10%; }
+    #recentActivity { flex-wrap: wrap; -webkit-flex-wrap: wrap; text-align: center; }
+    .recent { max-width: 100px; }
+    
+    #squidLogo { width: 23vw; height: auto; }
+    #title { left: 24vw; font-size: 5.5vw; }
+    #icon { left: 24vw; width: 14vw; height: auto; top: -1.5%; }
+    #whimsy { left: 33vw; }
+    #miniMenuLabel { display: none; }
+    #miniMenuSmallerLabel {display: inline-block; }
+    .ink_mini { width: 50px; top: 1px; transform: translateX(-0px); }
+    
+    #mainBitz figure.centre { max-width: 100%; }
+    #mainBitz figure.left, #mainBitz figure.right, #mainBitz figure.small {
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float:none;
+    }
+}
+
+@media(max-width: 450px) {
+    .container { -webkit-flex-basis: 50%; flex-basis: 50%; }
+    #me { float: none; display: block; margin-left: auto; margin-right: auto; }
+}
+
+@media(max-width: 320px) {
+    .recent { width: 90px; }
+}
+
+/* ===================== */
+
+/* Selecting by ID 
+    #mainText {
+        text-align: center;
+        color: red;
+    }
+
+    i.e. <p id="blah">This has an ID</p>
+*/
+
+/* Selecting by Class
+    .center {
+        text-align: center;
+        color: red;
+    }
+
+    i.e. <p class="this">This refers to just one</>
+*/
+
+/* Selecting by specific Class
+    p.center {
+        text-align: center;
+        color: red;
+    }
+
+    i.e. <p class="center large">This paragraph refers to two classes.</p>
+*/

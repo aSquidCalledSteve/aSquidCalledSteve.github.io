@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Optimism for Pessimists</title>
+        <link rel="stylesheet" type="text/css" href="/shiny.css">
+        <script src="/dropdown.js"></script>
+    </head>
+    <body onload="populateRandomPages()">
+        <header>
+            <a id="squid" href="/index.html"><img id="squidLogo" alt="Squid and Whimsy" src="/Images/Squid_Logo.png" /></a>
+            <section id="menuBar">
+                <img id="icon" src="/Images/Splat.png"/>
+                <a id="title" href="/index.html">Squid and Whimsy</a>
+                <nav id="mainMenu">
+                    
+                    <nav class="hover_menu">
+                        <img class="ink" src="/Images/Splat.png"/>
+                        <a href="javascript:void(0)" class="menuItem">Posts</a>
+                        <div class="dropdown-content">
+                            <a href="/posts.html">All</a>
+                            <a class="randomPost" href="/">Random</a>
+                            <a href="/gettingStarted.html">Where to begin</a>
+                        </div>
+                    </nav>
+                    
+                    <nav class="hover_menu">
+                        <img class="ink ink_cartoons" src="/Images/Skeleton/Splat_Cartoons.png"/>
+                        <a href="javascript:void(0)" class="menuItem">Cartoons</a>
+                        <div class="dropdown-content">
+                            <a href="/cartoons.html">All</a>
+                            <a class="randomCartoon" href="/">Random</a>
+                        </div>
+                    </nav>
+                    
+                    <nav class="hover_menu">
+                        <img class="ink ink_cartoons" src="/Images/Skeleton/Splat_AllOfIt.png"/>
+                        <a href="javascript:void(0)" class="menuItem">All of it!</a>
+                        <div class="dropdown-content">
+                            <a href="/archive.html">All</a>
+                            <a class="randomPage" href="/">Random</a>
+                        </div>
+                    </nav>
+                    
+                    <nav>
+                        <img class="ink" src="/Images/Splat.png"/>
+                        <a href="/about.html" class="menuItem">About</a>
+                    </nav>
+                </nav>
+                
+                <!-- Mini-menu for mobile goodness! -->
+                
+                <nav id="miniMenu">
+                    <img class="ink ink_mini" src="/Images/Skeleton/Splat_All.png" id="miniDropdown_ink"/>
+                    <a href="javascript:void(0)" class="menuItem" onclick="showDropdown('miniDropdown')">
+                        <label id="miniMenuLabel">Menu</label>
+                        <img id="miniMenuSmallerLabel" src="/Images/MiniMenu.png"/>
+                    </a>
+                    <div class="dropdown-content" id="miniDropdown">
+                        <a href="/posts.html">Posts</a>
+                        <div class="miniSubMenu">
+                            <a href="/posts.html">- All</a>
+                            <a class="randomPost" href="/">- Random</a>
+                            <a href="/gettingStarted.html">- Where to begin</a>
+                        </div>
+                        <a href="/cartoons.html">Cartoons</a>
+                        <div class="miniSubMenu">
+                            <a href="/cartoons.html">- All</a>
+                            <a class="randomCartoon" href="/">- Random</a>
+                        </div>
+                        <a href="/archive.html">All of it!</a>
+                        <div class="miniSubMenu">
+                            <a href="/archive.html">- All</a>
+                            <a class="randomPage" href="/">- Random</a>
+                        </div>
+                        <a href="/about.html">About</a>
+                    </div>
+                </nav>
+            </section>
+            <div id="whimsy">
+                <p>Optimism for Pessimists</p>
+            </div>
+        </header>
+
+        <section id="mainBitz">
+            <nav class="articleNav">
+                <a class="theEnd">First</a>
+                |
+                <a class="theEnd">Previous</a>
+                |
+                <a class="randomPage" href="/">Random</a>
+                |
+                <a href="../2/post.html">Next</a>
+                |
+                <a href="/Random/post_latest.html">Latest</a>
+            </nav>
+            
+            <article>
+                <header>
+                    <h1>If there’s only one idea that you leave with…</h1>
+                    <p>A.K.A. Ignore everything I say</p>
+                </header>
+                <img class="imgCentre" src="/Images/Posts/01_If_You_Take_One_Thing_Away/Robot.png"/>
+                <p>“What do you mean your wife dictates your social life?”</p>
+                <p>“Steve, when you’re married… you’ll understand.”</p>
+                <p>How often have you been told “how the world works”? Likely more than you think. Whether it’s hints that you’re missing out because you’re not using <em>this latest cool thing</em>, someone sharing their 5 indisputable (totally disputable) laws of happiness or simply jaded adults trying to foist their life choices upon you (also known as “so when are you having kids?”); the world is a bizarre bazar of implicit guidance as to how things roll.</p>
+                <figure class="right">
+                    <img src="/Images/Posts/01_If_You_Take_One_Thing_Away/Map.png" title="Plan E is, right now, wondering how to get a giant compass off of its face"/><figcaption>There are often many routes<br/> Except Plan D<br/>Never pick Plan D</figcaption></figure>
+                <p>But much of it will be wrong. Or, should I say, wrong for <em>you</em>. Whilst we might believe in experts and gurus, the reality is that they’re by-and-large doing the same thing we’re doing: Muddling along based upon best guesses. Some guesses are not as terrible as others… but they’re still just guesses. There is no perfect method, correct answer or cheat code, so never be ashamed to question what you’re told.</p>
+                <p>But it can be daunting. Once you realise that there is no single voice of authority or truth to answer questions like “how can I meet the ideal person?” or “what should I focus on?”, it opens up the chasm of a question “so what <em>should</em> I believe?” to which there is no straight answer. And it can be particularly isolating if conventional wisdom isn’t coming up with the results you want.</p>
+                <p>The best I believe you can hope for is a right way for <em>you</em>. By this, I mean that there is rarely (if ever) a “right way” that will guarantee the same results for everyone who follows it, so it’s more about adopting the ideas which work for you… not that guy, not those women, not that bastard over there (though his moustache <em>is</em> simply smashing).</p>
+                <p>I say this because I’ve seen a lot of life advice fall flat and do not appear to be alone in the pressure that I feel like I need to justify myself to the world from time to time. One of the more surreal elements of adulthood no one warned me about has been the untangling of this mess of conflicting advice; picking out the valuable keepers from what I’ve been told to think, feel, aspire to… or even just <em>who I should be</em>. And it turns out there is a lot to work through.</p>
+                <figure class="left">
+                    <img  src="/Images/Posts/01_If_You_Take_One_Thing_Away/Headphones.png" title="And irritating when you hear other people's on public transport"/><figcaption>Life advice is like a set of headphones... A tangled mess if left unchecked for 10 minutes</figcaption></figure>
+                <p>Women I know have been asked their plans for children. If upon stating that it’s not on their radar, they’ve either been called selfish or received the smug “oh you’ll change your mind”. Few have been asked if it’s something they actually want… Bizarre, considering they’re the ones who’d be living with the decision.</p>
+                <p>I’ve seen many individuals question the effectiveness of trying to think positively all the time, finding that it hasn’t helped them at all, only to be scolded for not believing or not thrusting enough when pulling off their power move.</p>
+                <p>Heck… Even my younger self discovered, much to his horror, that some toys were <em>not</em> as much fun as the advertisement suggested. What the hell!? That advert had laughing families and a happy parrot flying out of the board. My game just had plastic fragments launched across the room (granted, I was a bit of a sore loser).
+                <p>And the list goes on... Foreign holidays make you interesting. Women put up ‘bitch shields’ to test a man’s confidence. Getting smashed on a Friday night is what people do. Men shouldn’t show emotions. Using [x] product will make you happier / sexier. The youth of today have no morals. Encouraging women to be independent cheats them of their divine feminine energy (I wish I was making the last one up).<p>
+                <figure class="centre">
+                    <img src="/Images/Posts/01_If_You_Take_One_Thing_Away/Kale.png" title="Try it yourself! Next time you see an advert, look for the emotions / traits it's attempting to link with whatever they're selling"/><figcaption>Many messages aren't direct and instead rely on associations to try and coerce your thinking</figcaption></figure>
+                <p>What sucks is that these can feel like lose-lose situations. You follow the advice, it doesn’t work… you feel crummy. So you reject it but then face the implicit guilt-shaming, even in the “enlightened” communities, of those who decry others as “not ready” if they do not gather to latch their lips onto the pulsating teats of some schmuck with a New York bestseller. After all, if other people seem to be happy with that way of doing things, does that mean there’s something wrong with you if you don’t?</p>
+                <p>The answer, and why I’ve taken to writing, is a cacophonic sonic boom of a <em>no</em>.</p>
+                <p>My aim is simply to add another perspective, particularly to areas I’ve struggled to find reliable sources of advice on… or angrily wish I had found 10 years earlier. The tips I’ll be kicking around are, by no means, the only way of bashing in the problems that life kicks at us, or even the best. They’re simply little discoveries that have helped me to muddle through thus far, so might be of some use if you're wanting a few more ideas to toy with.</p>
+                <figure class="centre">
+                    <img src="/Images/Posts/01_If_You_Take_One_Thing_Away/Squid.png" title="Though if you, somehow, manage to fire ink out of your butt... please see a medical professional"/><figcaption>What works for a squid might not work for a human</figcaption></figure>
+                <p>Maybe they’ll work for you, maybe they won’t. My cartography is not canon and will not work for everyone. And that also stands true of almost any idea (except chugging butane, which tends to be universally stupid). Just because it worked for someone else, it doesn’t mean that you’re somehow flawed if it doesn’t work for you.</p>
+                <figure class="right small">
+                    <img src="/Images/Posts/01_If_You_Take_One_Thing_Away/80.png" title="The other 20% are left-handed anyway"/><figcaption>Nice try, Psychology</figcaption></figure>
+                <p>Heck, even the great bastion of psychology can only offer patterns at best. Oh sure, a light touch to the arm can increase the chance of getting a woman’s number from 10 to 20%<a class="reference" href="javascript:void(0)" onclick="createReference(this, 'ref1')">1</a>, but that’s still 80% it won’t work on. That’s not to say it’s not interesting or certainly a significant effect, but there’s no single rule that works on everyone. I’ve yet to come across any form of study that jumps from 0 to 100%, and the implication of this is significant: There is no single black/white solution for all.</p>
+                <p>So always question. And not just things you hate (that’s the easy bit) but the things you hold strongly too. Whether those beliefs are actually working for you. Is it really bringing you what you crave? Is what you crave even leading you to what you really want?</p>
+                <figure class="left small">
+                    <img class="imgLeft" src="/Images/Posts/01_If_You_Take_One_Thing_Away/Rake.png" title="Gardening tools will never become obsolete. You just can't rally an angry mob with a leaf-blower"/><figcaption>This isn't "critically thinking"...<br/> This is being a jerk</figcaption></figure>
+                <p>But before we run off and start lambasting what we’re told, remember that to <em>question</em> is not the same as to <em>reject</em>. It’s not about poking holes in everything (fun as it is), but entertaining the possibility that an idea <em>could</em> be wrong… or could be right. Sometimes I found that I had to go against conventional wisdom and follow a niche approach to get to where I wanted. Others, I found that I was always staring down at the obvious answer, but rejected it because I arrogantly felt too unique to be bound by such mundane ideas (i.e. that my atrocious sleep pattern at uni had nothing at all to do with my mood swings).</p>
+                <p>So every time you receive a new idea, remember that there are many other ideas like it. Try them out and find the best fit. Look to your own experiences and judgements before accepting another’s view of the world.</p>
+                <p>Including mine.</p>
+                <p>It can be tricky, disheartening and even lonely at times, but that is equally no reason to stop.</p>
+                <p class="clearSpace"><sub >*No cartoons were hurt in the making of this article.</sub></p>
+                <img class="imgCentre" src="/Images/Posts/01_If_You_Take_One_Thing_Away/Finale.png"/>
+            </article>
+            
+            <nav class="articleNav">
+                <a class="theEnd">First</a>
+                |
+                <a class="theEnd">Previous</a>
+                |
+                <a class="randomPage" href="/">Random</a>
+                |
+                <a href="../2/post.html">Next</a>
+                |
+                <a href="/Random/post_latest.html">Latest</a>
+            </nav>
+            
+            <section id="postFootnotes">
+                <fn><sup>1</sup> <label id="ref1">N. Guéguen (2007). ‘The Effect of a Man’s Touch on Woman’s Compliance to a Request in a Courtship Context’. Social Influence, vol. 2, pages 81-97</label></fn>
+            </section>
+        </section>
+        
+        <footer>
+            <div class="trim"></div>
+            <section id="otherPages">
+                <div id="otherPagesHeader">Other pages you might enjoy</div>
+                <a class="pageLink" href="/Cartoons/2/post.html">
+                    <img src="/Images/Cartoons/02_Threatening_Clouds/Thumb.png"/>
+                    <div>Threatening clouds</div>
+                </a>
+                <a class="pageLink" href="/Cartoons/3/post.html">
+                    <img src="/Images/Cartoons/03_Downsides_to_a_Hot_Bath/Thumb.png"/>
+                    <div>Downsides to a hot bath</div>
+                </a>
+                <a class="pageLink" href="/Posts/2/post.html">
+                    <img src="/Images/Posts/02_Your_Inner_Narrator/Thumb.png"/>
+                    <div>Your inner narrator</div>
+                </a>
+                <a class="pageLink" href="/Posts/3/post.html">
+                    <img src="/Images/Posts/03_Have_An_Average_Day/Thumb.png"/>
+                    <div>Have an average day</div>
+                </a>
+                <a class="pageLink" href="/Cartoons/1/post.html">
+                    <img src="/Images/Cartoons/01_Edamame/Thumb.png"/>
+                    <div>Edamame</div>
+                </a>
+            </section>
+            <section id="links">
+            </section>
+            <section id="legalBejeezus">
+                <p>All artwork and content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5 Generic License</a></p>
+                <p>So long as you attribute it to squidAndWhimsy.co.uk: You are free to copy and reuse this work non-commercially</p>
+            </section>
+        </footer>
+    </body>
+</html>
