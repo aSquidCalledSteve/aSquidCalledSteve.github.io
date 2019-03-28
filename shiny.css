@@ -824,7 +824,7 @@ footer {
     
     #mainBitz { width: 500px;}
     
-    .latestToon { flex-basis: 100%; }
+    .latestItem { flex-basis: 100%; }
     
     #mainBitz figure figcaption { font-size: 1em; }
     #mainBitz figure.centre { max-width: 90%; }
@@ -837,10 +837,10 @@ footer {
     
     .menuItem { padding-top: 20px; padding-bottom: 3vw; }
     
-    .latest { display: block; text-align: center; }
-    .latest summary { margin-left: 10%; margin-right: 10%; }
-    #recentActivity { flex-wrap: wrap; -webkit-flex-wrap: wrap; text-align: center; }
-    .recent { max-width: 100px; }
+    .newest { display: block; text-align: center; }
+    .newest summary { margin-left: 10%; margin-right: 10%; }
+    #olderStuff { flex-wrap: wrap; -webkit-flex-wrap: wrap; text-align: center; }
+    .older { max-width: 100px; }
     
     #squidLogo { width: 23vw; height: auto; }
     #title { left: 24vw; font-size: 5.5vw; }
@@ -866,7 +866,7 @@ footer {
 }
 
 @media(max-width: 320px) {
-    .recent { width: 90px; }
+    .older { width: 90px; }
 }
 
 /* ===================== */
