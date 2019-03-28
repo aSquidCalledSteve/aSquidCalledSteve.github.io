@@ -87,13 +87,60 @@
             <!-- Cool shiz to go here -->
             <h1>The full array of goodies... take your pick!</h1>
             
+            <section id="latestGrid">
+                <div class="container">
+                    <a class="latestItem" href="/Posts/3/post.html">
+                        <img src="Images/Posts/03_Have_An_Average_Day/Thumb.png"/>
+                        <summary>Have an average day</summary>
+                    </a>
+                </div>
+                <div class="container">
+                    <a class="latestItem" href="/Posts/2/post.html">
+                        <img src="Images/Posts/02_Your_Inner_Narrator/Thumb.png"/>
+                        <summary>Your inner narrator</summary>
+                        
+                    </a>
+                </div>
+                <div class="container">
+                    <a class="latestItem" href="/Cartoons/3/post.html">
+                        <img src="Images/Cartoons/03_Downsides_to_a_Hot_Bath/Thumb.png"/>
+                        <summary>Downsides to a hot bath</summary>
+                    </a>
+                </div>
+                <div class="container">
+                    <a class="latestItem" href="/Cartoons/2/post.html">
+                        <img src="Images/Cartoons/02_Threatening_Clouds/Thumb.png"/>
+                        <summary>Threatening clouds</summary>
+                        
+                    </a>
+                </div>
+                <div class="container">
+                    <a class="latestItem" href="/Cartoons/1/post.html">
+                        <img src="Images/Cartoons/01_Edamame/Thumb.png"/>
+                        <summary>Edamame</summary>
+                    </a>
+                </div>
+                <div class="container">
+                    <a class="latestItem" href="/Posts/1/post.html">
+                        <img src="Images/Posts/01_If_You_Take_One_Thing_Away/Thumb.png"/>
+                        <summary>If there's only one idea that you leave with</summary>
+                    </a>
+                </div>
+            </section>
+            
+            <h1>The whole collection:</h1>
+            
             <section id="filters">
                 <label>Filter by:</label>
                 <a href="javascript:void(0)" onclick="showAllLinks()">All</a>
                 /
                 <a href="javascript:void(0)" onclick="filterLinks('psychology')">Psychology</a>
                 /
-                <a href="javascript:void(0)" onclick="filterLinks('dating')">Dating</a>
+                <a href="javascript:void(0)" onclick="filterLinks('cartoon')">Cartoons</a>
+                <!-- /
+                <a href="javascript:void(0)" onclick="filterLinks('music')">Music</a> -->
+                <!-- /
+                <a href="javascript:void(0)" onclick="filterLinks('dating')">Dating</a> -->
                 /
                 <a href="javascript:void(0)" onclick="filterLinks('self_improvement')">Self Improvement</a>
                 /
@@ -102,7 +149,20 @@
             </section>
             
             <div class="posts">
-                <h2>2017</h2>
+                <ul>
+                    <li><h2>2019</h2>
+                        <ul>
+                            <li class="postLabel psychology"><a href="/Posts/3/post.html">Have an average day</a></li>
+                            <li class="postLabel psychology"><a href="/Posts/2/post.html">Your inner narrator</a></li>
+                            <li class="postLabel cartoon fun"><a href="/Cartoons/3/post.html">Downsides to a hot bath</a></li>
+                            <li class="postLabel cartoon fun"><a href="/Cartoons/2/post.html">Threatening Clouds</a></li>
+                            <li class="postLabel cartoon fun"><a href="/Cartoons/1/post.html">Edamame</a></li>
+                            <li class="postLabel psychology self_improvement"><a href="/Posts/1/post.html">If there's only one idea that you leave with</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- <h2>2017</h2>
 
                 <div class="postLabel fun">
                     <label>28th Jan</label>
@@ -139,7 +199,7 @@
                 <div class="postLabel fun">
                     <label>29th Jul</label>
                     <a href="/">A nerd at the orchestra</a>
-                </div>
+                </div> -->
             </div>
         </section>
 

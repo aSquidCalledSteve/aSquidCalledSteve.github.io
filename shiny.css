@@ -206,6 +206,10 @@ header {
     color: #ff0f64;
 }
 
+#mainBitz h1 {
+    margin: 25px 0px 10px 0px;
+}
+
 /* ======================= */
 /* ===== Article Nav ===== */
 
@@ -243,7 +247,7 @@ header {
 
 .greeting {
     font-size: 1.5em;
-    margin-top: 2em;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
     font-weight: bold;
 }
@@ -271,7 +275,7 @@ header {
 }
 
 #latestActivity h2 {
-    padding-top: 10px;
+    font-size: 1.2em;
 }
 
 /* ================== */
@@ -305,7 +309,7 @@ header {
     align-self: flex-start;
     max-width: 120px;
     
-    border-style: solid;
+    //border-style: solid;
     border-width: 2px;
     border-color: black;
     //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -319,7 +323,7 @@ header {
 /* =================== */
 /* == Recent Stuffs == */
 
-#recentActivity {
+#olderStuff {
     align-content: space-around;
     justify-content:space-around;
     
@@ -335,7 +339,7 @@ header {
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
-.recent {
+.older {
     margin: 0% auto;
     text-align: center;
     padding: 10px;
@@ -344,7 +348,7 @@ header {
     text-decoration: none;
 }
 
-.recent:hover {
+.older:hover {
     border-style: solid;
     border-color: deepskyblue;
     border-width: 2px;
@@ -352,26 +356,54 @@ header {
     border-radius: 10px;
 }
 
-.recent img {
+.older img {
     width: 100%;
     max-width: 120px;
     height: auto;
     
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
+    //border-style: solid;
+    //border-color: black;
+    //border-width: 1px;
 }
 
-.recent summary {
+.older summary {
     margin: 0px;
     color: black;
     pointer-events: none;
 }
 
-/* =================== */
-/* === Linky Link! === */
+/* ==================== */
+/* ==== Page Index ==== */
 
-.posts {
+.posts ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.posts ul h2 {
+    margin: 5px 0px 10px 0px;
+}
+
+.posts li ul {
+    padding-left: 30px;
+}
+
+.posts li ul li {
+    padding: 2px 0px 2px 0px;
+}
+
+.posts a {
+    text-decoration: none;
+    color:black;
+}
+
+.posts a:hover {
+    color:#ff0f64;
+    font-weight: bold;
+}
+
+
+/*.posts {
     display: table;
 }
 
@@ -397,16 +429,16 @@ header {
 .postLabel a:hover {
     color:#ff0f64;
     font-weight: bold;
-}
+}*/
 
 .hiddenLabel {
     display: none;
 }
 
-/* ==================== */
-/* === Latest Toons === */
+/* =================== */
+/* === Latest Grid === */
 
-#latestToons {    
+#latestGrid {    
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
     display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -424,7 +456,7 @@ header {
     text-align: center;
 }
 
-.latestToon {
+.latestItem {
     max-width: 150px;
     margin: auto;
     color: black;
@@ -432,17 +464,17 @@ header {
     text-decoration: none;
 }
 
-.latestToon summary {
+.latestItem summary {
     pointer-events: none;
 }
 
-.latestToon:hover {
+.latestItem:hover {
     color:#ff0f64;
     font-weight: bold;
 }
 
 /* ======================= */
-/* ======== Posts ======== */
+/* ======= Article ======= */
 
 #mainBitz article h1 {
     text-align: center;
@@ -592,8 +624,8 @@ header {
     color: #505050;
 }
 
-/* ======================= */
-/* ====== Cartoons  ====== */
+/* ====================== */
+/* ====== Cartoon  ====== */
 
 #comicHouse {
     text-align: center;
@@ -755,7 +787,8 @@ footer {
 .pageLink img {
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: white;
+    border-radius: 5px;
 }
 
 .pageLink label {
