@@ -466,6 +466,7 @@ header {
 
 .latestItem summary {
     pointer-events: none;
+    padding: 0px 15px;
 }
 
 .latestItem:hover {
@@ -842,6 +843,8 @@ footer {
     #olderStuff { flex-wrap: wrap; -webkit-flex-wrap: wrap; text-align: center; }
     .older { max-width: 100px; }
     
+    .container { -webkit-flex-basis: 50%; flex-basis: 50%;}
+    
     #squidLogo { width: 23vw; height: auto; }
     #title { left: 24vw; font-size: 5.5vw; }
     #icon { left: 24vw; width: 14vw; height: auto; top: -1.5%; }
@@ -862,6 +865,7 @@ footer {
 
 @media(max-width: 450px) {
     .container { -webkit-flex-basis: 50%; flex-basis: 50%; }
+}
     #me { float: none; display: block; margin-left: auto; margin-right: auto; }
 }
 
