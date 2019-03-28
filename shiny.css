@@ -865,8 +865,10 @@ footer {
 
 @media(max-width: 450px) {
     .container { -webkit-flex-basis: 50%; flex-basis: 50%; }
-}
     #me { float: none; display: block; margin-left: auto; margin-right: auto; }
+    #mainBitz { margin-top: 0px; }
+    .greeting { margin-top: 1em; }
+    .articleNav { margin-top: 15px; }
 }
 
 @media(max-width: 320px) {
