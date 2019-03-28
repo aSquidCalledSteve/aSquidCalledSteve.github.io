@@ -839,7 +839,7 @@ footer {
     .menuItem { padding-top: 20px; padding-bottom: 3vw; }
     
     .newest { display: block; text-align: center; }
-    .newest summary { margin-left: 10%; margin-right: 10%; }
+    .newest summary { margin-left: 5%; margin-right: 5%; }
     #olderStuff { flex-wrap: wrap; -webkit-flex-wrap: wrap; text-align: center; }
     .older { max-width: 100px; }
     
