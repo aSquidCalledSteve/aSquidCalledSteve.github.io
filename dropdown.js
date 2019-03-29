@@ -71,7 +71,7 @@ function checkParentsFor(root, className) {
     return false;
 }
 
-
+// Touchscreens
 window.addEventListener("touchend", function (event) {
     "use strict";
     var isDropdown;
@@ -79,6 +79,7 @@ window.addEventListener("touchend", function (event) {
     if (!isDropdown) {
         hideDropdowns();
     }
+    clearReferenceBoxes();
 }, false);
 
 /*window.on('touchend', function (e) {
