@@ -49,17 +49,6 @@ function showDropdown(dropdownId) {
     hideDropdownsExceptFor(dropdownId);
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
-    "use strict";
-    if (!e.target.matches('.menuItem')) {
-        hideDropdowns();
-    }
-    if (!e.target.matches('.reference')) {
-        clearReferenceBoxes();
-    }
-};
-
 function checkParentsFor(root, className) {
     "use strict";
     if (root.classList.contains(className)) {
@@ -71,7 +60,20 @@ function checkParentsFor(root, className) {
     return false;
 }
 
-// Touchscreens
+// === Close dropdown/references if the user clicks outside of it
+
+// For PC
+window.onclick = function (e) {
+    "use strict";
+    if (!e.target.matches('.menuItem')) {
+        hideDropdowns();
+    }
+    if (!e.target.matches('.reference')) {
+        clearReferenceBoxes();
+    }
+};
+
+// For Touchscreens
 window.addEventListener("touchend", function (event) {
     "use strict";
     var isDropdown;

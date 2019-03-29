@@ -375,7 +375,7 @@ header {
 /* ==================== */
 /* ==== Page Index ==== */
 
-.posts ul {
+/*.posts ul {
     list-style-type: none;
     padding-left: 0px;
 }
@@ -400,36 +400,48 @@ header {
 .posts a:hover {
     color:#ff0f64;
     font-weight: bold;
+}*/
+
+
+.posts {
+    display: table;
 }
 
-
-/*.posts {
-    display: table;
+ol {
+    list-style-type: none;
+    margin-left: 20px;
+    padding-left: 0px;
 }
 
 .postLabel {
     display:table-row;
+    //padding-bottom: 3px;
     
 }
 
-.postLabel label {
+.postLabel summary {
     padding-right: 20px;
-    padding-bottom: 3px;
-    display:table-cell;
-    min-width: 50px;
+    //padding-bottom: 3px;
+    display: table-cell;
+    min-width: 100px;
     white-space: nowrap;
+    text-align: center;
+    
+    font-size: 0.9em;
+    color:#ff0f64;
 }
 
 .postLabel a {
     display: table-cell;
     text-decoration: none;
     color:black;
+    padding-bottom: 3px;
 }
 
 .postLabel a:hover {
     color:#ff0f64;
     font-weight: bold;
-}*/
+}
 
 .hiddenLabel {
     display: none;
@@ -478,7 +490,6 @@ header {
 /* ======= Article ======= */
 
 #mainBitz article h1 {
-    text-align: center;
     font-size: 1.8em;
     margin-bottom: 0px;
 }
@@ -497,13 +508,23 @@ header {
     margin-top: 0px;
 }
 
-#mainBitz article header p {
+#mainBitz article header {
     text-align: center;
+    margin-bottom: 10px;
+}
+
+#mainBitz article header p {
     color: #808080;
     font-weight: normal;
     font-style: italic;
     font-size: 1.2em;
-    margin-top: 0px;
+    margin: 0px;
+}
+
+#mainBitz article header sub {
+    padding-top: 10px;
+    font-size: 1em;
+    color: #ff0f64;
 }
 
 #mainBitz article .keyBit {
