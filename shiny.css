@@ -638,6 +638,36 @@ header {
     max-width: 100%;
 }
 
+/* ======================== */
+/* === Getting Started  === */
+
+hr {
+    margin: 20px 0px 10px 0px;
+    border-top: 0.2px solid #badcfe;
+}
+
+.gettingStartedBlock {
+    padding: 15px 0px 5px 0px;
+}
+
+.gettingStartedLink {
+    text-decoration: none;
+    color:black;
+}
+
+.gettingStartedLink:hover {
+    color:#ff0f64;
+}
+
+.gettingStartedLink img {
+    float: left;
+    padding: 0px 15px 15px 0px;
+}
+
+.gettingStartedLink h2 {
+    margin-top: 0px;
+}
+
 /* ============================ */
 
 
@@ -830,6 +860,7 @@ footer {
     #mainBitz figure figcaption { font-size: 1em; }
     #mainBitz figure.centre { max-width: 90%; }
     #mainBitz figure.left, #mainBitz figure.right, #mainBitz figure.small { max-width: 50%; }
+    .gettingStartedLink img { padding: 0px 10px 0px 0px; }
 }
 
 /*=== Show even Minier-Menu & Menubar Shrink ===*/
