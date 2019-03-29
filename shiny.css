@@ -414,14 +414,11 @@ ol {
 }
 
 .postLabel {
-    display:table-row;
-    //padding-bottom: 3px;
-    
+    display:table-row;    
 }
 
 .postLabel summary {
     padding-right: 20px;
-    //padding-bottom: 3px;
     display: table-cell;
     min-width: 100px;
     white-space: nowrap;
@@ -605,6 +602,7 @@ ol {
 }
 
 #mainBitz figure.icon {
+    float: left;
     max-width: 20%;
     margin-right: 1em;
     margin-bottom: 1em;
@@ -879,8 +877,12 @@ footer {
     .latestItem { flex-basis: 100%; }
     
     #mainBitz figure figcaption { font-size: 1em; }
-    #mainBitz figure.centre { max-width: 90%; }
+    #mainBitz figure.centre { max-width: 100%; }
     #mainBitz figure.left, #mainBitz figure.right, #mainBitz figure.small { max-width: 50%; }
+    #mainBitz figure.large { max-width: 65%; }
+    #mainBitz figure.wide { max-width: 100%; }
+    #mainBitz figure.icon { max-width: 25%; }
+    
     .gettingStartedLink img { padding: 0px 10px 0px 0px; }
 }
 
@@ -913,6 +915,7 @@ footer {
         margin-right: auto;
         float:none;
     }
+    #mainBitz figure.icon { max-width: 30%; margin-right: 0.5em; margin-bottom: 0.2em; }
 }
 
 @media(max-width: 450px) {
