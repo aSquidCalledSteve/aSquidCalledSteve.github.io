@@ -944,6 +944,13 @@ footer {
         float:none;
     }
     #mainBitz figure.icon { max-width: 30%; margin-right: 0.5em; margin-bottom: 0.2em; }
+    
+    .listTable { padding-left: 0px; word-break: break-all; }
+    .listTable summary { min-width: 0px; padding-right: 5px; }
+    
+    .posts { margin-left: 0px; }
+    .posts ul { padding-left: 0px; }
+    .posts .postLabel summary { padding-right: 10px; }
 }
 
 @media(max-width: 450px) {
