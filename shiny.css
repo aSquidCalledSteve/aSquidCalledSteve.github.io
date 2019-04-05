@@ -747,6 +747,34 @@ hr {
     clear: left;
 }
 
+
+.listTable {
+    display: table;
+}
+
+.listTable li {
+    display: table-row;
+}
+
+.listTable summary {
+    display: table-cell;
+    min-width: 100px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.listTable a {
+    display: table-cell;
+    text-decoration: none;
+    color:black;
+    padding-bottom: 3px;
+}
+
+.listTable a:hover {
+    color:#ff0f64;
+    font-weight: bold;
+}
+
 /* ================== */
 /* === Old Recent === */
 
