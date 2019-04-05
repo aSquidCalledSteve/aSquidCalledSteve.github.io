@@ -3,14 +3,14 @@
 /*eslint no-unused-vars: ["error", { "vars": "local" }]*/
 
 // Matches the dropdown content or its respective 'ink' image
-function matchesDropdownOrInk(currentId, targetId) {
+/*function matchesDropdownOrInk(currentId, targetId) {
     "use strict";
     return (currentId.id === targetId) || (currentId.id === (targetId + "_ink"));
-}
+}*/
 
 /* Hides all other dropdowns except for the matching
     element and its respective 'ink' image */
-function hideDropdownsExceptFor(dropdownId) {
+/*function hideDropdownsExceptFor(dropdownId) {
     "use strict";
     var d, shownElements, currentElement;
     shownElements = document.getElementsByClassName("show");
@@ -21,13 +21,7 @@ function hideDropdownsExceptFor(dropdownId) {
             d--;
         }
     }
-}
-
-// Hide the lot!
-function hideDropdowns() {
-    "use strict";
-    hideDropdownsExceptFor(null);
-}
+}*/
 
 function clearReferenceBoxes() {
     "use strict";
@@ -42,11 +36,74 @@ function clearReferenceBoxes() {
 
 /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
-function showDropdown(dropdownId) {
+/*function showDropdown(dropdownId) {
     "use strict";
     document.getElementById(dropdownId).classList.toggle("show");
     document.getElementById(dropdownId + "_ink").classList.toggle("show");
     hideDropdownsExceptFor(dropdownId);
+}*/
+
+/*window.on('touchend', function (e) {
+    "use strict";
+    if (!e.target.matches('.menuItem')) {
+        hideDropdowns();
+    }
+});*/
+
+function getSiblingByClass(clickedElement, className) {
+    "use strict";
+    var dropdownElements;
+    dropdownElements = clickedElement.parentNode.getElementsByClassName(className);
+    return dropdownElements[0];
+}
+
+function hideAllDropdownsExcept(dropdownElement, inkElement) {
+    "use strict";
+    var d, shownElements, currentElement;
+    shownElements = document.getElementsByClassName("show");
+    for (d = 0; d < shownElements.length; d++) {
+        currentElement = shownElements[d];
+        if (dropdownElement === null || (currentElement !== dropdownElement && currentElement !== inkElement)) {
+            currentElement.classList.remove('show');
+            d--;
+        }
+    }
+}
+
+function toggleDropDownAndHideRest(dropdownElement) {
+    "use strict";
+    var associatedInk;
+    associatedInk = getSiblingByClass(dropdownElement, 'ink');
+    hideAllDropdownsExcept(dropdownElement, associatedInk);
+    dropdownElement.classList.toggle("show");
+    associatedInk.classList.toggle("show");
+}
+
+function toggleSubMenu(event) {
+    "use strict";
+    var dropdownElement;
+    event.preventDefault();
+    //event.stopPropagation();
+    dropdownElement = getSiblingByClass(event.target, 'dropdown-content');
+    toggleDropDownAndHideRest(dropdownElement);
+}
+
+function setup() {
+    "use strict";
+    var d, menus, currentMenu;
+    menus = document.getElementsByClassName("menuItem");
+    for (d = 0; d < menus.length; d++) {
+        currentMenu = menus[d];
+        if (currentMenu.parentNode.classList.contains('hover_menu')) {
+            currentMenu.addEventListener("touchend", toggleSubMenu);
+        }
+    }
+}
+
+// Hide the lot!
+function hideDropdowns() {
+    "use strict";
+    hideAllDropdownsExcept(null);
 }
 
 function checkParentsFor(root, className) {
@@ -65,9 +122,9 @@ function checkParentsFor(root, className) {
 // For PC
 window.onclick = function (e) {
     "use strict";
-    if (!e.target.matches('.menuItem')) {
+    /*if (!e.target.matches('.menuItem')) {
         hideDropdowns();
-    }
+    }*/
     if (!e.target.matches('.reference')) {
         clearReferenceBoxes();
     }
@@ -77,19 +134,34 @@ window.onclick = function (e) {
 window.addEventListener("touchend", function (event) {
     "use strict";
     var isDropdown;
-    isDropdown = checkParentsFor(event.target, 'dropdown-content');
+    isDropdown = checkParentsFor(event.target, 'dropdown-content') || checkParentsFor(event.target, 'menuItem');
     if (!isDropdown) {
         hideDropdowns();
     }
     clearReferenceBoxes();
 }, false);
 
-/*window.on('touchend', function (e) {
+
+
+/*function dropdownIsShowing(dropdownElement) {
     "use strict";
-    if (!e.target.matches('.menuItem')) {
-        hideDropdowns();
+    var displaySetting;
+    displaySetting = window.getComputedStyle(dropdownElement).getPropertyValue('display');
+    
+    return displaySetting === 'block';
+}
+
+function followLinkOrExpandIfDropdownNotShowing(clickedElement, link) {
+    "use strict";
+    alert("Running onClick!");
+    var dropdownElement;
+    dropdownElement = getDropdownSibling(clickedElement);
+    if (dropdownIsShowing(dropdownElement)) {
+        window.location.href = link;
+    } else {
+        dropdownElement.classList.toggle("show");
     }
-});*/
+}*/
 
 //=====================================================
 
@@ -172,7 +244,7 @@ function generateRandomLink() {
     }
 }
 
-function populateRandomPages() {
+/*function populateRandomPages() {
     "use strict";
     var i, allRandomLinks, currentRandomLink;
     allRandomLinks = document.getElementsByClassName("randomPage");
@@ -192,7 +264,7 @@ function populateRandomPages() {
         currentRandomLink = allRandomLinks[i];
         currentRandomLink.setAttribute('href', generateRandomCartoonLink());
     }
-}
+}*/
 
 //=====================================================
 

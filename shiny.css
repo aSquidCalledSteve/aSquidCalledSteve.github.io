@@ -112,7 +112,7 @@ header {
 /* ======================= */
 /* === Dropdown Stuffs === */
 
-.hover_menu:hover .dropdown-content {
+.hover_menu:hover .dropdown-content, .hover_menu:hover .ink {
     display: block;
 }
 

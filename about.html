@@ -7,39 +7,38 @@
         <link rel="stylesheet" type="text/css" href="/shiny.css">
         <script src="/dropdown.js"></script>
     </head>
-    <body onload="populateRandomPages()">
+    <body onload="setup()">
         <header>
             <a id="squid" href="/index.html"><img id="squidLogo" alt="Squid and Whimsy" src="/Images/Squid_Logo.png" /></a>
             <section id="menuBar">
                 <img id="icon" src="/Images/Splat.png"/>
                 <a id="title" href="/index.html">Squid and Whimsy</a>
                 <nav id="mainMenu">
-                    
                     <nav class="hover_menu">
                         <img class="ink" src="/Images/Splat.png"/>
-                        <a href="javascript:void(0)" class="menuItem">Posts</a>
+                        <a href="/posts.html" class="menuItem">Posts</a>
                         <div class="dropdown-content">
                             <a href="/posts.html">All</a>
-                            <a class="randomPost" href="/">Random</a>
+                            <a href="/Random/post.html">Random</a>
                             <a href="/gettingStarted.html">Where to begin</a>
                         </div>
                     </nav>
                     
                     <nav class="hover_menu">
                         <img class="ink ink_cartoons" src="/Images/Skeleton/Splat_Cartoons.png"/>
-                        <a href="javascript:void(0)" class="menuItem">Cartoons</a>
+                        <a href="/cartoons.html" class="menuItem">Cartoons</a>
                         <div class="dropdown-content">
                             <a href="/cartoons.html">All</a>
-                            <a class="randomCartoon" href="/">Random</a>
+                            <a href="/Random/cartoon.html">Random</a>
                         </div>
                     </nav>
                     
                     <nav class="hover_menu">
                         <img class="ink ink_cartoons" src="/Images/Skeleton/Splat_AllOfIt.png"/>
-                        <a href="javascript:void(0)" class="menuItem">All of it!</a>
+                        <a href="/archive.html" class="menuItem">All of it!</a>
                         <div class="dropdown-content">
                             <a href="/archive.html">All</a>
-                            <a class="randomPage" href="/">Random</a>
+                            <a href="/Random/page.html">Random</a>
                         </div>
                     </nav>
                     
@@ -51,28 +50,28 @@
                 
                 <!-- Mini-menu for mobile goodness! -->
                 
-                <nav id="miniMenu">
-                    <img class="ink ink_mini" src="/Images/Skeleton/Splat_All.png" id="miniDropdown_ink"/>
-                    <a href="javascript:void(0)" class="menuItem" onclick="showDropdown('miniDropdown')">
+                <nav id="miniMenu" class="hover_menu">
+                    <img class="ink ink_mini" src="/Images/Skeleton/Splat_All.png"/>
+                    <a href="javascript:void(0)" class="menuItem">
                         <label id="miniMenuLabel">Menu</label>
                         <img id="miniMenuSmallerLabel" src="/Images/MiniMenu.png"/>
                     </a>
-                    <div class="dropdown-content" id="miniDropdown">
+                    <div class="dropdown-content">
                         <a href="/posts.html">Posts</a>
                         <div class="miniSubMenu">
                             <a href="/posts.html">- All</a>
-                            <a class="randomPost" href="/">- Random</a>
+                            <a href="/Random/post.html">- Random</a>
                             <a href="/gettingStarted.html">- Where to begin</a>
                         </div>
                         <a href="/cartoons.html">Cartoons</a>
                         <div class="miniSubMenu">
                             <a href="/cartoons.html">- All</a>
-                            <a class="randomCartoon" href="/">- Random</a>
+                            <a href="/Random/cartoon.html">- Random</a>
                         </div>
                         <a href="/archive.html">All of it!</a>
                         <div class="miniSubMenu">
                             <a href="/archive.html">- All</a>
-                            <a class="randomPage" href="/">- Random</a>
+                            <a href="/Random/page.html">- Random</a>
                         </div>
                         <a href="/about.html">About</a>
                     </div>
