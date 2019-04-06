@@ -418,14 +418,24 @@ ol {
 }
 
 .postLabel summary {
-    padding-right: 20px;
     display: table-cell;
-    min-width: 100px;
+    padding: 0px 15px 0px 5px;
+    margin-right: 10px;
+    //min-width: 100px;
     white-space: nowrap;
-    text-align: center;
-    
-    font-size: 0.9em;
-    color:#ff0f64;
+    //font-weight: bold;
+}
+
+.postLabel .post {
+    background: #ffd7d6;
+}
+
+.postLabel .toon {
+    background: #ffefbd;
+}
+
+.postLabel .tune {
+    background: #eadcff;
 }
 
 .postLabel a {
@@ -950,7 +960,6 @@ footer {
     
     .posts { margin-left: 0px; }
     .posts ul { padding-left: 0px; }
-    .posts .postLabel summary { padding-right: 10px; }
 }
 
 @media(max-width: 450px) {
