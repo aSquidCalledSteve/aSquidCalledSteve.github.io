@@ -667,6 +667,30 @@ ol {
     max-width: 100%;
 }
 
+#comicCaption {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 5%;
+    margin-bottom: 20px;
+    background: #ffefbd;
+    font-size: 1.2em;
+}
+
+#comicCaption h2 {
+    text-align: left;
+    
+    font-size: 1em;
+    //font-weight: normal;
+    margin: 10px 0px 0px;
+    text-decoration: underline;
+}
+
+#comicCaption p {
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+    font-size: 1em;
+}
+
 /* ======================== */
 /* === Getting Started  === */
 
