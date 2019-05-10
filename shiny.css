@@ -946,6 +946,9 @@ footer {
     #mainBitz figure.icon { max-width: 25%; }
     
     .gettingStartedLink img { padding: 0px 10px 0px 0px; }
+    
+    #comicCaption h2 { font-size: 0.9em; margin-top: 0px; }
+    #comicCaption p { font-size: 0.9em; margin-bottom: 5px; }
 }
 
 /*=== Show even Minier-Menu & Menubar Shrink ===*/
@@ -984,6 +987,9 @@ footer {
     
     .posts { margin-left: 0px; }
     .posts ul { padding-left: 0px; }
+    
+    #comicCaption h2 { font-size: 0.8em; margin-top: 0px; }
+    #comicCaption p { font-size: 0.8em; margin-bottom: 5px; }
 }
 
 @media(max-width: 450px) {
