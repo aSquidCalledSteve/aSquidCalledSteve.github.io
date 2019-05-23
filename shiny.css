@@ -674,6 +674,7 @@ ol {
     margin-bottom: 20px;
     background: #ffefbd;
     font-size: 1.2em;
+    border-radius: 20px;
 }
 
 #comicCaption h2 {
@@ -689,6 +690,11 @@ ol {
     text-align: center;
     margin: 10px 0px 20px 0px;
     font-size: 1em;
+}
+
+#comicCaption img {
+    width: 100%;
+    height: auto;
 }
 
 /* ======================== */

@@ -197,7 +197,7 @@ function getMaxPosts() {
 
 function getMaxCartoons() {
     "use strict";
-    return 5;
+    return 6;
 }
 
 function generateLatestPostLink() {
