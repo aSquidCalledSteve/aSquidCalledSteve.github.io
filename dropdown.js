@@ -192,7 +192,7 @@ function filterLinks(classToShow) {
 
 function getMaxPosts() {
     "use strict";
-    return 3;
+    return 4;
 }
 
 function getMaxCartoons() {

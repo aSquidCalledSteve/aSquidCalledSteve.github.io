@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Squid and Whimsy - Have an average day</title>
+        <link rel="stylesheet" type="text/css" href="/shiny.css">
+        <script src="/dropdown.js"></script>
+    </head>
+    <body onload="setup()">
+        <header>
+            <a id="squid" href="/index.html"><img id="squidLogo" alt="Squid and Whimsy" src="/Images/Squid_Logo.png" /></a>
+            <section id="menuBar">
+                <img id="icon" src="/Images/Splat.png"/>
+                <a id="title" href="/index.html">Squid and Whimsy</a>
+                <nav id="mainMenu">
+                    <nav class="hover_menu">
+                        <img class="ink" src="/Images/Splat.png"/>
+                        <a href="/posts.html" class="menuItem">Posts</a>
+                        <div class="dropdown-content">
+                            <a href="/posts.html">All</a>
+                            <a href="/Random/post.html">Random</a>
+                            <a href="/gettingStarted.html">Where to begin</a>
+                        </div>
+                    </nav>
+                    
+                    <nav class="hover_menu">
+                        <img class="ink ink_cartoons" src="/Images/Skeleton/Splat_Cartoons.png"/>
+                        <a href="/cartoons.html" class="menuItem">Cartoons</a>
+                        <div class="dropdown-content">
+                            <a href="/cartoons.html">All</a>
+                            <a href="/Random/cartoon.html">Random</a>
+                        </div>
+                    </nav>
+                    
+                    <nav class="hover_menu">
+                        <img class="ink ink_cartoons" src="/Images/Skeleton/Splat_AllOfIt.png"/>
+                        <a href="/archive.html" class="menuItem">All of it!</a>
+                        <div class="dropdown-content">
+                            <a href="/archive.html">All</a>
+                            <a href="/Random/page.html">Random</a>
+                        </div>
+                    </nav>
+                    
+                    <nav>
+                        <img class="ink" src="/Images/Splat.png"/>
+                        <a href="/about.html" class="menuItem">About</a>
+                    </nav>
+                </nav>
+                
+                <!-- Mini-menu for mobile goodness! -->
+                
+                <nav id="miniMenu" class="hover_menu">
+                    <img class="ink ink_mini" src="/Images/Skeleton/Splat_All.png"/>
+                    <a href="javascript:void(0)" class="menuItem">
+                        <label id="miniMenuLabel">Menu</label>
+                        <img id="miniMenuSmallerLabel" src="/Images/MiniMenu.png"/>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="/posts.html">Posts</a>
+                        <div class="miniSubMenu">
+                            <a href="/posts.html">- All</a>
+                            <a href="/Random/post.html">- Random</a>
+                            <a href="/gettingStarted.html">- Where to begin</a>
+                        </div>
+                        <a href="/cartoons.html">Cartoons</a>
+                        <div class="miniSubMenu">
+                            <a href="/cartoons.html">- All</a>
+                            <a href="/Random/cartoon.html">- Random</a>
+                        </div>
+                        <a href="/archive.html">All of it!</a>
+                        <div class="miniSubMenu">
+                            <a href="/archive.html">- All</a>
+                            <a href="/Random/page.html">- Random</a>
+                        </div>
+                        <a href="/about.html">About</a>
+                    </div>
+                </nav>
+            </section>
+            <div id="whimsy">
+                <p>Optimism for Pessimists</p>
+            </div>
+        </header>
+
+        <section id="mainBitz">
+            <nav class="articleNav">
+                <a href="/Random/post_first.html">First</a>
+                |
+                <a href="../3/post.html">Previous</a>
+                |
+                <a href="/Random/page.html">Random</a>
+                |
+                <a class="theEnd">Next</a>
+                |
+                <a class="theEnd">Latest</a>
+            </nav>
+            
+            <article>
+                <header>
+                    <h1>Being assertive without being a jerk</h1>
+                    <p>A.K.A. Riding with the waves</p>
+                    <sub>(25-35 min read)</sub>
+                </header>
+                
+                <img class="imgCentre" src="/Images/Posts/04_Being_Assertive/Sailing.png"/>
+                
+                <p>Apparently not all problems can be solved with cheat codes. Disappointingly, life isn’t a legion of Romans who can be bested with a small army of laser-toting robots<a class="reference" href="javascript:void(0)" onclick="createReference(this, 'ref1')">1</a>. As such, my teenage years sucked when problems were nails met with either a sledgehammer or hiding under the bed and hoping that somebody else could intervene.</p>
+                <figure class="left">
+                    <img src="/Images/Posts/04_Being_Assertive/Bed_Hide.png" title="The least it could do was make me a coffee too"/><figcaption>You can hide from problems for only so long</figcaption>
+                </figure>
+                <p>Suffice to say, assertiveness wasn’t my forte.</p>
+                <p>In fact, it wasn’t until I was 19 and at university that I discovered that it was even a thing.</p>
+                <p>I had managed to annoy my close friend and flat-mate, Patrick. Knowing me, it probably involved juggling balls and a panda… but that’s another story. Either way, he was pretty unhappy this time. He caught me later that day and said “Hey, I’d like to talk over something”. My shields went up as I braced myself for the petty feuds and passive aggression that I’d grown so used to in similar situations.</p>
+                <p>“Yeah, that was a bit too far. Are we ok to not do that again?”</p>
+                <p>“Er… sure?” I replied, waiting for the rest of it.</p>
+                <p>“Wicked. Thanks buddy!” slapped my shoulder and off he went.</p>
+                <figure class="right">
+                    <img src="/Images/Posts/04_Being_Assertive/Luke.png" title="I'm also not too fond of you hanging out with those rebel riff raff"/><figcaption>Like a light sabre, assertiveness requires some finesse</figcaption>
+                </figure>
+                <p>And that was that.</p>
+                <p>I was left in a stunned adrenaline dump. He had approached me with a problem, made the point, got the resolution and was done with it.</p>
+                <p>Where were the angry guessing games? Why was my face still intact? There was no passive aggression. No grudges. Nada! I crawled out of my nuclear bunker and tried to fathom what had just happened.</p>
+                <p>It was at that point I realised that, within the multitude of ways of dealing with people, maybe not all of them need to involve frustration and drawn out battles of petty attrition. It appeared that maybe conflict can be swift and gracious and assertiveness can cut through situations with beautiful precision. So I set to work trying to hone this craft.</p>
+                <p>But it’s a balancing act. Wielded incorrectly, it can be as brash and destructive as it can be wishy-washy and feeble. Like a light sabre, you can deflect bullets like a boss but can equally dismember something important if you’re not careful. Whilst the below is by no means exhaustive, I’ve found them to be useful crowbars for cracking some ingrained habits and getting the assertive show on the road.</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon1.png"/>
+                </figure><h3>1. Fuck your shoulds. Fuck your expectations. Fuck your rights</h3>
+                <p>This may seem quite cutthroat, but I’ll explain.</p>
+                <p>Imagine that you’re driving along to somewhere really cool – maybe an awesome party, or you’ve just <em>left</em> a really naff one and are trying to get as far away from it as possible<a class="reference" href="javascript:void(0)" onclick="createReference(this, 'ref2')">2</a>. All is going well until you see a huge boulder blocking the road. You’re left with a few options: A) Move the boulder / find a way around it. B) Indignantly sit there and demand that whoever put the boulder there come and move it.</p>
+                <p>The chances are, you picked A. Now here’s a really dumb question: Why?</p>
+                <p>I ask because, if you look at the scenario, picking A involves more effort on your part… and for something that’s not even your fault. You have to go out of your way to rectify something that, all things being fair, shouldn’t have even happened in the first place. B doesn’t involve this. So why pick A?</p>
+                <p>“Well that’s obvious” you may say, possibly slapping me for asking such an inane question. “The first option means that you actually get to where you want to go”. And I would agree with you, though perhaps not the slap. Though such a question might seem asinine… how often have you heard the likes of the following:</p>
+                <p>“But I shouldn’t have to tell my boss that this unfair. As a boss, they should already know things like this.”</p>
+                <figure class="left large">
+                    <img src="/Images/Posts/04_Being_Assertive/Newton.png" title="While you're at it, tell that Einstein bloke to get that speedy light thing to stop reflecting on my screen"/><figcaption>How often do we expect the world to align around us, and not the other way around?</figcaption>
+                </figure>
+                <p>“I shouldn’t have to tell my partner what kinds of affection I prefer. If they loved me, they would know.”</p>
+                <p>“I shouldn’t have to complain about my latte. At the price they charge, they should be damn good at this by now.”</p>
+                <p>In all of these cases, other people are our boulders. A journey that should have been seamless – having a decent working relationship, feeling loved or enjoying a drink – has been disrupted by people not doing what we feel they should have been. They’re in our way and now we’re grumpy. Why then, is option B so tempting? Choosing to complain to our friends (or anyone willing to listen) of the injustice. When asked if we’re going to say anything, we may even angrily reply “but why is it up to <em>me</em> to fix this? I shouldn’t have to be the one fixing somebody else’s screw-up.”</p>
+                <p>This is the danger of “should”.</p>
+                <p>Whilst a phrase like “If I’m nice to people, they should be nice to me in return” seems nice enough, it risks turning into an imaginary bargain: “If I uphold my side of being nice, then everyone else must be nice to me.” This can be dangerous as it can provide a convenient excuse not to act when it goes wrong. If other people are not nice, we can tell ourselves “but I upheld my side of the contract. It’s unfair to expect me to put in any extra effort to fix this, <em>as I’ve done my part</em>”. It almost appeals to an imaginary referee to go and sort them out. The reality, however, is that many scenarios will lack such a figure. Therefore, the onus falls to you if you are wanting a better resolution.</p>
+                <figure class="right">
+                    <img src="/Images/Posts/04_Being_Assertive/Water.png" title="I love Swampy, but he really needs some lessons in picking real estate"/><figcaption>Adaptability is a willingness to occasionally take a longer route to get to where you need to</figcaption>
+                </figure>
+                <p>You might be familiar with the concept of ‘adaptability’. In effect, being able to take a number of problems in your stride. But if you think about what this involves, it’s a willingness to occasionally take on more than your fair share in order to get the same result. Like the boulder, it means shrugging and taking a slightly longer route if you have to. In the opening story, Patrick was the one who approached me, despite the fact that I’d upset him and thus technically should have been the one reaching out (and that was my failing). He focussed on the result he wanted (me not annoying him) and not on whose responsibility it was to get us there.</p>
+                <p>That, to me, is one of the fundamental tenets of assertiveness.</p>
+                <p>The way I see it: No matter how many rights, laws and rules we put in place, the world will still tread on our toes and break any existential rules we apply to it. More frequently than we might like we’ll have to get our hands dirty, complain about things and request the seemingly obvious. But it is not some massive failing of the universe or other people to have to even ask in the first place. What rights and laws simply give us is (hopefully) more weight behind us if we have to fight our corner. The point is though, we will still sometimes have to fight our corner. Being assertive has nothing to do with your rights or mystical shoulds, but simply: <strong>What is the end result you want?</strong></p>
+                <p>One of the largest mental blocks to get over is the idea that you must deserve something or have a right to it in order to be able to go after it. Screw waiting until you deserve something. Quite frankly, you probably don’t. But the wonderful bit is that you don’t have to. If you want it, that’s reason enough to give it a go. So go get ‘em.</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon2.png"/>
+                </figure><h3>2. Pee in their shoes</h3>
+                <p>“Walk in their shoes” is a great concept, but so saturated where it’s regularly used for guilt-tripping. The whole “try taking a walk in their shoes. Then you’ll see how much of a jerk you are”. We want a slightly different effect. One that empowers you, not make you want to burn things.</p>
+                <p>C’mon now, put down the matches.</p>
+                <p>If you’re questioning whether you should complain or be assertive about something, flip the roles.</p>
+                <figure class="right">
+                    <img src="/Images/Posts/04_Being_Assertive/Flip.png" title="You can also use this in positive situations, to figure out when to dish out praise"/><figcaption>Flip the roles. How would you want a friend to behave to you?</figcaption>
+                </figure>
+                <p>Imagine that your friend is the one you’ve upset. Would you want them to flag it to you, or would you rather they pent it up, seethed about it and held a grudge against you for several days? In short, ask “If the roles were reversed and my friend was doing what I am… would I be happy with that?”</p>
+                <p>Or maybe you’re a product owner or waiter. Would you prefer if your customer flagged a problem to you, or would you want them to say nothing and leave feeling cheated, only to indignantly complain to all of their friends about you / your company without even giving you a chance to rectify it?</p>
+                <p>The point of flipping it is to gather some perspective. It’s one of my favourite tactics and, since using it, have regularly found myself in many situations that I’d otherwise let go, only to realise “hey, I should actually say something here.”</p>
+                <p>It’s impossible for people to make things right if they have no idea that something is wrong in the first place.</p>
+                <p>It also helps calibrate the execution. The old “treat others how you’d want to be treated”. Think how you’d want the other person to handle the situation if you had trod on <em>their</em> toes. The reaction you bestow upon them should match yours. If it doesn’t, are you being too harsh or too passive?</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon3.png"/>
+                </figure><h3>3. Don’t become a warrior</h3>
+                <p>When reading up about assertiveness, it’s easy to fall into the trap of believing that you have to be some kind of Aragorn-esque macho figure with a slightly oversized chin who must stride into every situation to make their stance known. The reality, however, is somewhat boring. You are still you, just instead of holding your tongue on most opportunities, it’s now some.</p>
+                <p>If you want to know what asserting your stance at <em>every</em> given opportunity looks like: I was on a pretty packed train, and an announcement came through saying “Please be reminded that this train will not be stopping at the next station”. A guy in front of me sighed loudly, rolled his eyes and whipped out his phone to message the national rail company something along the lines of “Actually, the next station that the train stops at IS the next station. #Idiots”</p>
+                <p>He must be a blast at parties.</p>
+                <figure class="right large">
+                    <img src="/Images/Posts/04_Being_Assertive/Wuss.png" title="And just think, if you weren't a named character we wouldn't even have this scene"/><figcaption>Beware the temptation to pick fights to prove that you are strong to others</figcaption>
+                </figure>
+                <p>I am, however, in no position to talk. A few years prior, I had socked it to some jerk on a review for something arbitrary like a book. Yes, a book. I picked apart their comments and stuffed a few facts in their face for good measure. Did I feel smug? Sure I did. But did we both walk away better people for it? No. We sure as heck didn’t change each other’s minds. The whole exercise was pointless. I was wound up for most of the following day, periodically checking to see if they had replied so that I could plan some kind of counter-attack. It felt petty, but I persevered anyway with the misguided notion of “but this thing really upset me. That means I must stand my ground, right? If I don’t assert here, how will I for the bigger things?” like those scenes in movies where someone claims “this is not my war” and is made out to look like a wuss (and often dies anyway). I didn’t want to be that person. But that resulted in a day of wasted focus over some doofus I’d never meet on a product I’ve never actually buy.</p>
+                <p>I have since discovered the solace of the ‘Block’ button. It’s really cool.</p>
+                <p>Here’s the thing: You don’t have to assert yourself every time something annoys you. This is especially true in the age of the internet, 24 hour news and targeted ads; we can end up on a bit of a never-ending pub crawl of rage if we’re not careful. Creating conflict is emotionally pricey and to do so 24-7 will leave you exhausted and, quite frankly, unpleasant. Inflexible individuals are not particularly fun to be around, and I have alienated enough people by feeling like I had to barge in and make my opinion known.</p>
+                <figure class="centre">
+                    <img src="/Images/Posts/04_Being_Assertive/Heman.png" title="There was an awkward moment when castle Grayskull went offline for 2 hours to install a new Windows update"/><figcaption>Not every conversation requires you to dominate it</figcaption>
+                </figure>
+                <p>The thing to remember is that asserting is <strong>making your stance known in a not-crappy way</strong>. You don’t always have to win or even play at all. There are times when the cost involved in doing so (whether time, effort or damaged friendships) would make the whole exercise meaningless.</p>
+                <p>Sometimes, when it’s really important, you’ll need to patiently work your way through, approaching from different angles. Other times, you’re better off simply seeking compromises, going with the consensus or graciously bowing out. And that’s ok. Respecting your partner’s “no” is important. If you want people to respect your stance, that means sometimes respecting theirs too. One of the key distinctions between being assertive and being a jerk is that the latter doesn’t take no for an answer. It is the all-too-common scenario of a pushy guy who asks a woman out and who, not only demands an explanation if she says no, but will go as far as to attempt to argue the points too.</p>
+                <p>Geez, is that really still a thing?</p>
+                <p>Whilst there’s no exact formulae for “when should you assert”, my general rule of thumb is: Focus on the big things and let the little ones slip by… not the other way around. Oh, and if it’s an opinion on the internet, it’s probably not worth it. Did I mention I discovered a ‘Block’ button?</p>
+                <p>In many respects, it’s like a penis: Wield it correctly in the appropriate situation and you might just leave somebody impressed, but that doesn’t mean you should repeatedly wave it everybody’s face at any given opportunity.</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon4.png"/>
+                </figure><h3>4. Start graciously</h3>
+                <p>When rubbed the wrong way, it can be tempting to go in all guns blazing, or at the very least quite sternly; the idea being to draw the line swiftly and make it clear that further transgressions are not welcome. This is especially tempting if you’ve been stewing on it for a while, replaying the mini-narrative of Captain Jerklord McSmugface going out of their way to pick on you.</p>
+                <figure class="right">
+                    <img src="/Images/Posts/04_Being_Assertive/TheCaptain.png" title="A pretty impressive feat when you realise that he has no depth perception"/><figcaption>Darn you Captain Jerklord McSmugface!</figcaption>
+                </figure>
+                <p>However, when I attended noise-complaints as a warden on the university campus, quite often the student would give a disappointed “why didn’t someone just come and tell me, rather than ringing you guys up?” You see, many problems arise from thoughtlessness, not malice. And I don’t mean ‘thoughtless’ in a derogatory sense, I literally mean they just haven’t thought about it. It’s not that the other person is choosing to annoy you, but it simply hasn’t <em>occurred</em> to them that it might be considered annoying in the first place<a class="reference" href="javascript:void(0)" onclick="createReference(this, 'ref3')">3</a>. It is dangerously easy to ascribe malice to something that could otherwise be sheer ignorance.</p>
+                <p>As such, my preferred rule-of-thumb for a first offence is to always assume that the other party is not aware of the problem, and thus start diplomatically.</p>
+                <figure class="left">
+                    <img src="/Images/Posts/04_Being_Assertive/Ignorance.png" title="My dad once switched the SatNav voice to Bugs Bunny. After 10 long miles of &quot;What's up doc?&quot; he graciously decided to switch it off"/><figcaption>People are not always aware that they may be annoying you</figcaption>
+                </figure>
+                <p>Bring it to their attention and suggest a resolution (very much like my flatmate did way back at the start of this post). Lay all your cards on the table up front. Be gracious but don’t withhold what you want or indirectly hint at it.</p>
+                <p>Sure, this won’t always work. For every disappointed student at a noise complaint, I’d get a “tell ‘em to piss off” at another. At this point, you can escalate if you wish to. But the key here is that the line has already been clearly drawn. All you’re doing now is enforcing it. But the advantage with starting diplomatically is that you have less chance of upsetting the decent people who would comply on the first request. And personally, I prefer to keep the decent people on side and be forced to escalate with the not-so-cool people, rather than annoy the decent people in order to sock it to the assholes first time round (satisfying as it may be).</p>
+                <p>Now you might think that ‘gracious / diplomatic’ is synonymous to ‘treading softly’. Well…</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon5.png"/>
+                </figure><h3>5. Assertiveness is certain</h3>
+                <p>Being wishy-washy is a ‘Kick Me’ sign for your words. To help your point be taken seriously, it generally helps to sound like you have some belief or certainty in what you say. By ‘certainty’, I don’t mean that you assume the other person will say yes. We’re not talking about an “oh hey, so when am I getting that pay rise? *wink*” but more that you <strong>speak as if what you’re asking is reasonable</strong>. More of a “Hey boss, before my review next month, may I put myself forward to be considered for a pay rise please?”</p>
+                <p>You can still be courteous, of course. ‘I’m afraid’, ‘please’, ‘sorry’ and the like are all fine… But the more you tip-toe around a topic, bombard it with explanations or pre-empt with a massive run-up of “so I was thinking… and it’s ok to say no, but you see I was just wondering -” you risk showing a lack of conviction. It says “I have no confidence in what I’m doing, and believe that I need to justify myself because you’re going to react weirdly if I don’t”, which threatens to put the other person on guard before you’ve even made the point. It’s akin to when I was on online dating and some women would message first but devote an entire paragraph to saying “I know it’s weird that a woman is messaging first, but I believe in equality and feel that women should make an effort too… yadda yadda yadda let’s hook up.”</p>
+                <p>The stupid thing was, despite being totally cool with a first message, seeing how weird <em>they</em> were about it made me question my own judgement. “Hang on. Is this weird?” I’d start thinking. “Should I actually find them weird and run a mile, because they seem to assume that I should... Ugh this is confusing, let’s just chat to that redhead who likes the picture of me with my nipples out.”</p>
+                <p>Put another way, don’t start every conversation with “oh hey, I’ve got something to show you. But first, please stand behind this bomb-proof screen.”</p>
+                <figure class="centre">
+                    <img src="/Images/Posts/04_Being_Assertive/Question.png" title="Saying &quot;Now don't get mad&quot; means you can't get mad, right?"/><figcaption>The more you treat a question as volatile, the more you risk the other person thinking it too</figcaption>
+                </figure>
+                <p>As a general rule leave your (brief) explanations for <em>after</em> you’ve made the point if the request is written (such as e-mail) or a potentially touchy subject. Otherwise wait for the other party to respond first before busting out the magic bag of explanation beans if you have to. “You’re allowed to say no” should only be whipped out when it’s a really big ask and quite one-sided (i.e. asking a friend if they’re free to travel a long way to attend a gathering of yours), and only if you will genuinely accept their first ‘no’ without question or explanation. Anything else, don’t bother. If you need more than a “Yo, quick question…” or “Sorry to be a pain, but…” to breach the subject, then you’re probably over-thinking it.</p>
+                <figure class="right large">
+                    <img src="/Images/Posts/04_Being_Assertive/Email.png" title="In March 2019 I received the first and only work e-mail that I've ever seen marked as 'low priority'. I have more shiny Pokemon than that"/><figcaption>A neat trick I was taught at work was to put the key bit at the top of the email</figcaption>
+                </figure>
+                <p>“Hi, I’m afraid this product doesn’t seem to work. I have the receipt. May I request a refund please?”</p>
+                <p>“Sorry, but as stated in your terms and conditions here, you have to refund this product” (Notice here that the ‘force’ is legal force, not personal aggression. The phrasing is simply stating fact… which just so happens to carry the punch of a trebuchet)</p>
+                <p>“Hey, tonight’s been fun. May I walk you home?” (They can say ‘no’. This is important)</p>
+                <p>“You seem like great fun. I’d love to meet up if you’re interested. How does 8:00pm Friday at [really cool place] grab you?” (Confident and lays out a plan… but still allows for ‘no’)</p>
+                <p>Remember that being certain about your own ideas doesn’t mean that the other person must agree with them either. They can disagree or say no. If they do, don’t panic. Don’t back-pedal or throw up a wall of “oh gosh, I’m so sorry, I didn’t mean to impose. I hope we’re still ok? I just thought that…” This too, shows a complete lack of conviction. It says “what I just asked was wrong.”</p>
+                <p>Asking someone out is not wrong. Asking for a pay rise is not wrong. Highlighting that you’re upset is not wrong.</p>
+                <p>Now if your <em>execution</em> is a bit off, let’s say that the other person got offended that you were too in-your-face about it, that’s fair game to apologise for. Cut an “I’m sorry, I did not mean it to come across like that” and bow out gracefully. But don’t apologise for asking in the first place. If you’ve mustered the gall to ask for something (and good on you if you have) at least stand by the fact you did. I’ve found the term ‘Understood’ to be a brilliant ally here. It’s a great neutral way of acknowledging someone’s reply without playing it down or trying to alleviate it. It allows you to respect their decision whilst still standing by your own opinion.</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon6.png"/>
+                </figure><h3>6. Stick to the point</h3>
+                <p>Sometimes an assertive exchange will be swift and a resolution forthcoming. Great! But other times it may not. If it ever gets drawn out though, try not to get side-tracked. Know your intention before you begin. Know what you want or, at the very least, would feel happy that you mustered the gall to ask for. Then make sure you do not lose this key point.</p>
+                <p>So often, discussions can drift off-topic to a pointless arguing of semantics. In tense / difficult situations you might find that people try to side-step. What they’re generally doing is pulling the topic into favourable ground which they can easily defend (politicians do this all the time).</p>
+                <figure class="right">
+                    <img src="/Images/Posts/04_Being_Assertive/Sheep.png" title="Unlocking the Aqua Sheep was a real high point of my childhood"/><figcaption>Keep your core point in mind so that you can navigate to it</figcaption>
+                </figure>
+                <p>Let’s say someone flags my belligerent, pushy behaviour. If I’m in the wrong, I’ll have a very hard time defending it. So I might pull the “but I didn’t mean it” or “you’re being sensitive”. Doing this swings the spotlight from the <em>action</em> (something I can’t really defend) to my intention or the other person’s flaws. Notice that the discussion has now shifted in my favour. If they take the bait and start challenging my points, the original point will be lost in bickering. In this scenario, you need to bring the core point back:</p>
+                <p>“I appreciate you didn’t mean it. But that aggressive tone was very harsh. Please can you not do that again.”</p>
+                <p>Remember, this isn’t the debating club. As counter-intuitive as it seems, you don’t want to bog yourself down countering each and every point the other person throws out. Many are distracting invites to goad you into less favourable ground. Whilst it’s normal for conversations to fluctuate where you listen to the other person and acknowledge their stances too, if you start to lose sight of the resolution, graciously bring it back to centre.</p>
+                <p>And yes, by this I also mean you’re not allowed to go off one and whinge either. If you get on your high horse and engage in a self-righteous rant, you start to suffocate the point of being assertive in the first place. Not cool. And this goes double if (or when) you get your resolution. If the other party cedes ground, resist the temptation to add in a kick. Be grateful you got a resolution, thank them and bow out. I’ve generally found that people are more likely to be cooperative in future if they know that you’re not going to be an asshole about it.</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon7.png"/>
+                </figure><h3>7. Separate the person from the action</h3>
+                <p>“You’re pissing me off”, “You’re making me upset” and “You’re being a jerk” doesn’t really help anyone. If anything, all they do is add fuel to a huge raging inferno of a discussion.</p>
+                <p>There might not sound like much of a difference between “You’re making me angry” to “That aggressive tone is upsetting”, but the subtle choice of words is important.</p>
+                <p>The problem with “You’re making me angry” is that it’s targeted at the person themselves. Them just <em>existing</em> is antagonistic. It doesn’t give context as to what it is about what they’re doing. In effect, it’s pointing a finger and saying “you’re an awful person”.</p>
+                <p>The latter statement, however, focusses on the action. It disassociates the critique of other person with the action, other than they are simply the ones executing it. It can soften the blow. It’s not passing judgement on them as a person, but simply something that they’re doing.</p>
+                <p>Even if a person’s actions are unreasonable to you, by claiming that they themselves are unreasonable, you threaten to put them on the defensive. You draw the discussion away from ‘this action upsets me, please stop it’ to petty squabbles about whether they’re actually are a bad person or not. Even if they <em>were</em> being unfair, they’ll be unlikely to cede ground if you imply that, due to this incident, that they are an awful human being.</p>
+                <p>So avoid the damning declarations. Stick purely to the actions themselves. Speaking of which:</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon8.png"/>
+                </figure><h3>8. Stick to the facts</h3>
+                <p>When being assertive, you only have 2 tools at your disposal: Facts (i.e. actions or spoken words) and your feelings (how you feel).</p>
+                <p>That’s it.</p>
+                <p>These are inarguable things. [Action] happened and you feel [emotion]. Neither are incorrect. Whilst it’s true to say “maybe they didn’t mean it”, that doesn’t change the fact that you still feel upset because of it. Of course, that doesn’t mean that if you feel upset that you should always flag it… but out of the factors to choosing whether to assert yourself; questioning whether it’s <em>right</em> that you feel a particular emotion should not be one of them.</p>
+                <p>What’s not included when flagging, however, are judgements on people’s intentions, attitudes or character.</p>
+                <figure class="right small">
+                    <img src="/Images/Posts/04_Being_Assertive/Freud.png" title="Sometimes a cigar is just a cigar. Other times it's a hedgehog. I really shouldn't keep them in the same box"/><figcaption>Psychoanalysing doesn't make you look smart. It makes you annoying</figcaption>
+                </figure>
+                <p>How come? Guessing another person’s intentions is purely subjective. Not only are you probably wrong, but you’re going to have an incredibly tough time proving it even if you’re not. More to the point, it’s often moot anyway. Whether someone’s combative attitude stems from cultural differences, a poor night’s sleep or just being an asshole… the resolution remains the same: Please find a way to use a calmer approach. The intention doesn’t change what you’re trying to achieve.</p>
+                <p>On the flip-side, don’t let people block your point by hiding behind their intentions. Don’t get me wrong, people will understandably explain their side in order to help reduce fallout or ill-will. That’s fine and well worth being accepting of. What you need to be careful of, however, is if they try and use intention to completely back-out of having to doing anything at all. After all, if you jumped out at a friend to surprise them for their birthday, but crashed into them so that they broke an ankle; you wouldn’t exactly say “Hey, I didn’t <em>mean</em> to do that – <em>you</em> drive yourself to the hospital you ungrateful prick.”</p>
+                <p>It’s important here to quickly draw the line to establish that you are not calling their intentions into question. It’s simply that their action, regardless of intention, had an undesirable effect.</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon9.png"/>
+                </figure><h3>9. Pack a solution</h3>
+                <p>If you were brought up to not be a jerk… you probably picked up the idea that being upfront with your wants is a selfish thing to do. However, desires will have a way of demanding your attention. If you’re not upfront with them, they generally start popping up indirectly instead. So you drop hints, keep your cards close and mournfully write awful poetry in the hope that someone notices it. Also known as: “I’ll just leave this here and if they care / were interested, they would notice”.</p>
+                <figure class="right small">
+                    <img src="/Images/Posts/04_Being_Assertive/RageBat.png" title="I also have a Rage Whiffle bat, but it's just not the same..."/><figcaption>Offering a solution tends be more palatable than offering to club people with your rage</figcaption>
+                </figure>
+                <p>But this sucks as a means to get things done. The problem here is that you put the entire onus on the other person to notice the problem, come up with a solution and deliver it. And that’s a pressure that many will balk at if they can. And for good reason: It’s your problem, why are they its new owner? By putting your cards on the table, you actually give other people more context to work with. They don’t have to try and assess the scenario or guess what the desired outcomes are… most of the time all they have to do is say yes or no. It takes a huge mental weight off of their shoulders and lets them know precisely where they stand. In other words, believe it or not, being upfront with your wishes can make it <em>easier</em> for the other person.</p>
+                <p>This is especially true in the workplace. A neat trick to getting official comms / clarification is to basically write it all yourself and simply ask it to be OK’d. Humans are busy creatures with their own problems, so the easier you make it for them to resolve yours, the more likely you will get such a resolution.</p>
+                <p>Therefore, know what it is you actually want when flagging something. If you can turn up with a proposed solution, even better! Conflict, in particular, is uncomfortable and offering an idea right from the off tends to allow for faster results. Doing this helps to frame the situation as “I’ve got some ideas to make things awesome, how does this sound?” and not “ok, hold still. I have an anger bat and want to beat something with it”.</p>
+                <figure class="icon">
+                    <img src="/Images/Posts/04_Being_Assertive/Icon10.png"/>
+                </figure><h3>10. Start simple and keep an assertive-diary</h3>
+                <p>Assertiveness begets assertiveness. It’s like a muscle. The more you work it, the stronger it gets.</p>
+                <p>As such, if you’re not used to it, pick the low-hanging fruit. Look for easier things you can assert yourself in. Maybe it’s learning to complain if a product is faulty. Maybe it’s expressing your emotions to people. Maybe it’s just stating which restaurant you’d want to go to this weekend.</p>
+                <figure class="right small">
+                    <img src="/Images/Posts/04_Being_Assertive/Nomicon.png" title="Even Cthulu needs reassurance from time to time"/><figcaption>If a diary is too naff, how about a <em>grimoire</em>?</figcaption>
+                </figure>
+                <p>Whilst you’ll want to aim for bigger, important situations down the line, there’s nothing wrong with using small, easier interactions to get a feel for things and start shifting a few ingrained habits. Also don’t be afraid to plan what you’re going to say upfront or keep it to written replies to begin with. The ability to look over and edit it is a valuable ally when starting out.</p>
+                <p>Off the back of this, also start keeping an assertive diary. I know, I know. Diaries are stupid and mainly the source of material for terrible movies. But I found a score card of sorts to be profoundly encouraging to get off the starting blocks. Basically, any time you’re assertive: Make a note that you did so. It doesn’t matter whether you were successful or not. The point is that you challenged your boundaries and went for it. That’s what matters and precisely what you need to focus on.</p>
+                <p>And if you do. Good job!</p>
+                <h3>And yet, sometimes you will still be a jerk</h3>
+                <p>Whilst the above ideas seek to reduce the collateral damage from standing up for yourself, assertiveness is not an elixir. It will never guarantee a flawless and perfect resolution every time.</p>
+                <p>And that’s ok. To me, the importance of assertiveness is not about whether you dominated or won, but simply whether you were assertive when it mattered. I’ve had some situations explode horribly in my face, yet the bizarre thing is that I can still look back on them feel better for it. I think “I actually went and asked that person out! Go me” or “I called out poor behaviour and found irreconcilable differences with that person. Go me!”</p>
+                <p>And it’s this, I believe, which is why it helps bolster that sense of control in your life. If you spend your time mentally trying to will the world to be nice to you, you can end up frustrated, lonely and feeling isolated. There’s only so long you can put up with this until your mind starts asking “what’s the point of trying?” It is a horrible mindset that costs you a fortune in mental energy and robs you of that vigour to make things happen. Once you start making those small bursts of asserting yourself however, you start to create what I can only describe as little pockets of valiance which say “I can do this. My effort <em>can</em> have an effect!” And the best part is once you’ve done it, all you can do is add more.</p>
+                <figure class="centre">
+                    <img src="/Images/Posts/04_Being_Assertive/Trophies.png" title="Remember as well to focus on your actions moreso than the results"/><figcaption>Revisit your successes often. You've earned them!</figcaption>
+                </figure>
+                <p>Sometimes it will fail. Sometimes you won’t get your way. Sometimes people will react badly to it. Sometimes it’s not even the easiest or most attractive option. It can be pretty unpleasant asking the difficult questions, challenging a good friend or ultimately putting someone else’s feelings on the line. It’s ok to feel anxious and uncomfortable about being assertive. Heck, even complaining about my coffee still knots my stomach, as I instead briefly hope that some force of the universe will find a way to un-crap my latte without me having to say anything.</p>
+                <p>It’ll come and go. Some days you really won’t feel it, but that’s perfectly normal. Don’t beat yourself up about it. Check back over your assertive diary and go easy on yourself. We often make far more progress than we give ourselves credit for, so remember to congratulate yourself from time to time.</p>
+                <p>Get out there and good luck.</p>
+                
+                <img class="imgCentre" src="/Images/Posts/04_Being_Assertive/Sailing_Finale.png"/>
+            </article>
+            
+            <nav class="articleNav">
+                <a href="/Random/post_first.html">First</a>
+                |
+                <a href="../3/post.html">Previous</a>
+                |
+                <a href="/Random/page.html">Random</a>
+                |
+                <a class="theEnd">Next</a>
+                |
+                <a class="theEnd">Latest</a>
+            </nav>
+            
+            <section id="postFootnotes">
+                <fn><sup>1</sup> <label id="ref1">If memory serves, ‘stormbilly’ is the code</label></fn>
+                <fn><sup>2</sup> <label id="ref2">Much as I’d LOVE to stay and have you show me unfunny videos on your phone</label></fn>
+                <fn><sup>3</sup> <label id="ref3">Except people who do not mute their phone keyboards on public transport. Screw those people</label></fn>
+            </section>
+        </section>
+        
+        <footer>
+            <div class="trim"></div>
+            <section id="otherPages">
+                <div id="otherPagesHeader">Other pages you might enjoy</div>
+                <a class="pageLink" href="/Cartoons/6/post.html">
+                    <img src="/Images/Cartoons/06_Seashells/Thumb.png"/>
+                    <div>Sea shells</div>
+                </a>
+                <a class="pageLink" href="/Cartoons/3/post.html">
+                    <img src="/Images/Cartoons/03_Downsides_to_a_Hot_Bath/Thumb.png"/>
+                    <div>Downsides to a hot bath</div>
+                </a>
+                <a class="pageLink" href="/Posts/1/post.html">
+                    <img src="/Images/Posts/01_If_You_Take_One_Thing_Away/Thumb.png"/>
+                    <div>If there’s only one idea that you leave with</div>
+                </a>
+                <a class="pageLink" href="/Cartoons/2/post.html">
+                    <img src="/Images/Cartoons/02_Threatening_Clouds/Thumb.png"/>
+                    <div>Threatening Clouds</div>
+                </a>
+                <a class="pageLink" href="/Posts/2/post.html">
+                    <img src="/Images/Posts/02_Your_Inner_Narrator/Thumb.png"/>
+                    <div>Your inner narrator</div>
+                </a>
+            </section>
+            <section id="links">
+            </section>
+            <section id="legalBejeezus">
+                <p>All artwork and content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 Generic License</a></p>
+                <p>So long as you attribute it to squidAndWhimsy.co.uk: You are free to copy and reuse this work non-commercially</p>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -512,7 +512,7 @@ ol {
     text-align: left;
     font-weight: bold;
     font-size: 1.4em;
-    margin-top: 0px;
+    margin-top: 30px;
 }
 
 #mainBitz article header {
@@ -538,6 +538,11 @@ ol {
     font-weight: bold;
     font-style: italic;
     font-size: 1.1em;
+}
+
+#mainBitz article strong {
+    font-weight: bold;
+    font-style: italic;
 }
 
 #mainBitz article .reference {
