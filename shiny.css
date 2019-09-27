@@ -672,6 +672,10 @@ ol {
     max-width: 100%;
 }
 
+.mainComic.hiccups {
+    padding: 50px 0px 30px;
+}
+
 #comicCaption {
     margin-left: 10%;
     margin-right: 10%;
