@@ -18,17 +18,14 @@ header {
     position: relative;
 }
 
+.hidden {
+    display: none;
+}
+
 #squid {
     margin-left: 6px;
     position: absolute;
     z-index: 10;
-}
-
-#squidNew {
-    margin-left: 6px;
-    position: absolute;
-    z-index: 10;
-    top: 8px;
 }
 
 #squidLogo {
