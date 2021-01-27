@@ -200,6 +200,11 @@ function getMaxCartoons() {
     return 21;
 }
 
+function getMaxTunes() {
+    "use strict";
+    return 22;
+}
+
 function generateLatestPostLink() {
     "use strict";
     return '/Posts/' + getMaxPosts() + '/post.html';
@@ -210,6 +215,11 @@ function generateLatestCartoonLink() {
     return '/Cartoons/' + getMaxCartoons() + '/post.html';
 }
 
+function generateLatestTuneLink() {
+    "use strict";
+    return '/tunes/' + getMaxTunes() + '/post.html';
+}
+
 function generateFirstPostLink() {
     "use strict";
     return '/Posts/1/post.html';
@@ -218,6 +228,11 @@ function generateFirstPostLink() {
 function generateFirstCartoonLink() {
     "use strict";
     return '/Cartoons/1/post.html';
+}
+
+function generateFirstTuneLink() {
+    "use strict";
+    return '/tunes/1/post.html';
 }
 
 function getRandomInt(min, max) {
@@ -233,6 +248,11 @@ function generateRandomPostLink() {
 function generateRandomCartoonLink() {
     "use strict";
     return '/Cartoons/' + getRandomInt(1, getMaxCartoons()) + '/post.html';
+}
+
+function generateRandomTuneLink() {
+    "use strict";
+    return '/tunes/' + getRandomInt(1, getMaxTunes()) + '/post.html';
 }
 
 function generateRandomLink() {

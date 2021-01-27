@@ -664,6 +664,54 @@ ol {
 }
 
 /* ====================== */
+/* ====== Caption  ====== */
+
+.caption {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 5%;
+    margin-bottom: 20px;
+    background: #ffefbd;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+
+.caption h2 {
+    font-size: 1em;
+    margin: 10px 0px 0px;
+    text-decoration: underline;
+}
+
+.caption h3 {
+    font-size: 1em;
+}
+
+.caption p {
+    margin: 10px 0px 20px 0px;
+    font-size: 1em;
+}
+
+.caption .summary {
+    margin: 0px;
+    padding: 0px;
+    display: table;
+}
+
+.caption .summary li {
+    display: table-row;
+}
+
+.caption .summary h3 {
+    display: table-cell;
+    min-width: 100px;
+}
+
+.caption .summary p {
+    display: table-cell;
+    padding-left: 10px;
+}
+
+/* ====================== */
 /* ====== Cartoon  ====== */
 
 #comicHouse {
@@ -708,6 +756,27 @@ ol {
 #comicCaption img {
     width: 100%;
     height: auto;
+}
+
+/* ============== */
+/* === Music  === */
+
+#musicHouse {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#musicHouse iframe {
+    width: 560px;
+    height: 315px;
+}
+
+#musicCaption h2 {
+    text-align: center;
+}
+
+#musicCaption p {
+    text-align: left;
 }
 
 /* ======================== */
@@ -968,6 +1037,12 @@ footer {
     
     #comicCaption h2 { font-size: 0.9em; margin-top: 0px; }
     #comicCaption p { font-size: 0.9em; margin-bottom: 5px; }
+    
+    .caption h2, .caption h3 { font-size: 0.9em; margin-top: 0px; min-width: 90px; }
+    .caption p { font-size: 0.9em; margin-bottom: 5px; }
+    .caption .summary { padding-top: 5px; }
+    
+    #musicHouse iframe { width: 400px; height: 300px; }
 }
 
 /*=== Show even Minier-Menu & Menubar Shrink ===*/
@@ -1009,6 +1084,11 @@ footer {
     
     #comicCaption h2 { font-size: 0.8em; margin-top: 0px; }
     #comicCaption p { font-size: 0.8em; margin-bottom: 5px; }
+    
+    .caption h2, .caption h3 { font-size: 0.8em; margin-top: 0px; min-width: 75px; }
+    .caption p { font-size: 0.8em; margin-bottom: 5px; }
+    
+    #musicHouse iframe { width: 380px; height: 285px; }
 }
 
 @media(max-width: 450px) {
