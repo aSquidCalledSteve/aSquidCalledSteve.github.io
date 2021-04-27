@@ -616,6 +616,10 @@ ol {
     max-width: 35%;
 }
 
+#mainBitz figure.tiny {
+    max-width: 25%;
+}
+
 #mainBitz figure.large {
     max-width: 50%;
 }
