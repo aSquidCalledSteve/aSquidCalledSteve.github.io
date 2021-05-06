@@ -1033,6 +1033,7 @@ footer {
     #mainBitz figure figcaption { font-size: 1em; }
     #mainBitz figure.centre { max-width: 100%; }
     #mainBitz figure.left, #mainBitz figure.right, #mainBitz figure.small { max-width: 50%; }
+    #mainBitz figure.tiny { max-width: 35%; }
     #mainBitz figure.large { max-width: 65%; }
     #mainBitz figure.wide { max-width: 100%; }
     #mainBitz figure.icon { max-width: 25%; }
@@ -1078,6 +1079,7 @@ footer {
         margin-right: auto;
         float:none;
     }
+    #mainBitz figure.tiny { max-width: 40%; }
     #mainBitz figure.icon { max-width: 30%; margin-right: 0.5em; margin-bottom: 0.2em; }
     
     .listTable { padding-left: 0px; word-break: break-all; }
