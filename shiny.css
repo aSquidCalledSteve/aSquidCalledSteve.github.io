@@ -681,6 +681,7 @@ ol {
 }
 
 .caption h2 {
+    text-align: center;
     font-size: 1em;
     margin: 10px 0px 0px;
     text-decoration: underline;
@@ -706,11 +707,13 @@ ol {
 }
 
 .caption .summary h3 {
+    text-align: left;
     display: table-cell;
     min-width: 100px;
 }
 
 .caption .summary p {
+    text-align: left;
     display: table-cell;
     padding-left: 10px;
 }
@@ -743,7 +746,7 @@ ol {
 }
 
 #comicCaption h2 {
-    text-align: left;
+    text-align: center;
     
     font-size: 1em;
     //font-weight: normal;
@@ -752,7 +755,7 @@ ol {
 }
 
 #comicCaption p {
-    text-align: center;
+    text-align: left;
     margin: 10px 0px 20px 0px;
     font-size: 1em;
 }
@@ -773,14 +776,6 @@ ol {
 #musicHouse iframe {
     width: 560px;
     height: 315px;
-}
-
-#musicCaption h2 {
-    text-align: center;
-}
-
-#musicCaption p {
-    text-align: left;
 }
 
 /* ======================== */
