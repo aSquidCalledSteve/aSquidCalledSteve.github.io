@@ -197,7 +197,7 @@ function getMaxPosts() {
 
 function getMaxCartoons() {
     "use strict";
-    return 29;
+    return 30;
 }
 
 function getMaxTunes() {
