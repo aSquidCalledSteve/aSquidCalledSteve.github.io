@@ -631,6 +631,12 @@ ol {
     margin-bottom: 1em;
 }
 
+#mainBitz figure.icon.right {
+    float: right;
+    margin-left: 1em;
+    margin-right: 0em;
+}
+
 .imgCentre {
     height: auto;
     max-width: 100%;
@@ -1076,6 +1082,7 @@ footer {
     }
     #mainBitz figure.tiny { max-width: 40%; }
     #mainBitz figure.icon { max-width: 30%; margin-right: 0.5em; margin-bottom: 0.2em; }
+    #mainBitz figure.icon.right { margin-left: 0.5em; }
     
     .listTable { padding-left: 0px; word-break: break-all; }
     .listTable summary { min-width: 0px; padding-right: 5px; }
