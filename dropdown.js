@@ -257,7 +257,10 @@ function generateRandomTuneLink() {
 
 function generateRandomLink() {
     "use strict";
-    if (getRandomInt(0, 1) === 0) {
+    var i;
+    i = getRandomInt(1, (getMaxCartoons() + getMaxPosts()));
+    
+    if ((i - getMaxPosts()) < 0) {
         return generateRandomPostLink();
     } else {
         return generateRandomCartoonLink();
